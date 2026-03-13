@@ -66,18 +66,13 @@ const Navbar: React.FC = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        {/* Logo Section */}
         <Link to="/" className="flex items-center gap-2.5 group relative z-50">
-          <div className={`p-2 rounded-xl transition-all duration-300 ${!isTransparent ? 'bg-wood-900 text-white shadow-lg' : 'bg-white/10 backdrop-blur-sm text-white border border-white/20'}`}>
-            <Hammer size={22} strokeWidth={2.5} />
-          </div>
-          <div>
-             <span className={`text-xl md:text-2xl font-serif font-bold tracking-tight block leading-none transition-colors ${textColorClass}`}>
-              LONE STAR
-            </span>
-            <span className={`text-[10px] font-bold tracking-[0.2em] uppercase transition-colors ${!isTransparent ? 'text-wood-600' : 'text-wood-200'}`}>
-              Premium Sheds
-            </span>
+          <div className={`p-1 rounded-xl transition-all duration-300 ${!isTransparent ? 'bg-transparent' : 'bg-white/10 backdrop-blur-sm border border-white/20'}`}>
+            <img 
+              src="https://lonestarshedsllc.com/wp-content/uploads/2022/08/LONE-STARSHEDS-LLC-3.png" 
+              alt="Lone Star Sheds Logo" 
+              className="h-12 w-auto object-contain"
+            />
           </div>
         </Link>
 
@@ -114,8 +109,8 @@ const Navbar: React.FC = () => {
 
         {/* Desktop CTA Buttons */}
         <div className="hidden md:flex items-center gap-5">
-          <a href="tel:+15555555555" className={`font-serif font-bold text-lg hover:opacity-75 transition-opacity ${textColorClass}`}>
-            (555) 123-4567
+          <a href="tel:9377791119" className={`font-serif font-bold text-lg hover:opacity-75 transition-opacity ${textColorClass}`}>
+            (937) 779-1119
           </a>
           <button 
             onClick={() => navigate('/configure')} 
@@ -173,13 +168,13 @@ const Navbar: React.FC = () => {
                 View Digital Brochure
               </a>
               <a 
-                href="tel:5551234567"
+                href="tel:9377791119"
                 className="flex items-center gap-3 text-slate-600 font-medium"
               >
                 <div className="bg-wood-50 p-3 rounded-full text-wood-600">
                     <Phone size={20} />
                 </div>
-                (555) 123-4567
+                (937) 779-1119
               </a>
            </div>
 

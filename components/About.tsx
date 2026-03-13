@@ -11,7 +11,7 @@ const About: React.FC = () => {
       <div className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=2070&auto=format&fit=crop" 
+            src="https://lonestarshedsllc.com/wp-content/uploads/2022/08/Screen-Shot-2022-08-04-at-1.37.58-PM.png" 
             alt="Lone Star Sheds Workshop" 
             className="w-full h-full object-cover"
           />
@@ -21,7 +21,7 @@ const About: React.FC = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full text-wood-100 text-xs font-bold uppercase tracking-widest mb-6 border border-white/20 animate-fade-in">
             <Star size={14} className="text-gold-500" />
-            Est. 2005
+            Est. 1989
           </div>
           <h1 className="text-4xl md:text-6xl font-serif font-bold text-white mb-6 animate-fade-in-up">
             Built in Texas. <span className="text-gold-500">For Texas.</span>
@@ -39,8 +39,8 @@ const About: React.FC = () => {
             <div className="order-2 md:order-1 relative">
               <div className="absolute -inset-4 border-2 border-wood-100 rounded-3xl -translate-x-4 -translate-y-4 -z-10"></div>
               <img 
-                src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1000&auto=format&fit=crop" 
-                alt="Carpenters working" 
+                src="https://lonestarshedsllc.com/wp-content/uploads/2022/08/236199884_2358240684307833_1133409526224825962_n.jpeg" 
+                alt="Lone Star Sheds Construction" 
                 className="rounded-2xl shadow-xl w-full"
               />
               <div className="absolute -bottom-6 -right-6 bg-wood-500 text-white p-6 rounded-xl shadow-lg hidden md:block">

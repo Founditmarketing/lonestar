@@ -54,62 +54,27 @@ export const analyzeShedRequest = async (userPrompt: string): Promise<AIAnalysis
 };
 
 export const fetchTestimonials = async (): Promise<Review[]> => {
-  try {
-    const response = await ai.models.generateContent({
-      model: 'gemini-3-flash-preview',
-      contents: `Generate 4 realistic, high-quality positive customer reviews for "Lone Star Sheds" based in Texas.
-      
-      Requirements:
-      - Vibe: Authentic, Texan, appreciative of quality and durability.
-      - Mentions: Specific locations (e.g. Denton, Commerce, Tyler, Sulphur Springs), specific product features (Hardie plank, loft space, delivery driver named 'John' or 'Ross'), and the Rent-to-Own process.
-      - Format: JSON array.
-      - Authors: Diverse names.
-      - Dates: Relative times like "2 weeks ago", "a month ago".
-      `,
-      config: {
-        responseMimeType: "application/json",
-        responseSchema: {
-          type: Type.ARRAY,
-          items: {
-            type: Type.OBJECT,
-            properties: {
-              author: { type: Type.STRING },
-              location: { type: Type.STRING },
-              rating: { type: Type.NUMBER },
-              text: { type: Type.STRING },
-              date: { type: Type.STRING }
-            },
-            required: ["author", "location", "rating", "text", "date"]
-          }
-        }
-      }
-    });
-
-    return JSON.parse(response.text || '[]') as Review[];
-  } catch (error) {
-    console.error("Failed to fetch reviews:", error);
-    return [
-      {
-        author: "Sarah Jenkins",
-        location: "Denton, TX",
-        rating: 5,
-        text: "The AI design tool was a game changer. I wasn't sure if I could fit a studio in my backyard, but the team guided me perfectly. The delivery was incredibly smooth.",
-        date: "1 month ago"
-      },
-      {
-        author: "Mike Ross",
-        location: "Tyler, TX",
-        rating: 5,
-        text: "Honest pricing is right. I quoted this build with three other companies, and Lone Star was the only one that didn't try to upsell me on features I didn't need. Solid build.",
-        date: "2 months ago"
-      },
-      {
-        author: "The Miller Family",
-        location: "Sulphur Springs, TX",
-        rating: 5,
-        text: "We needed a storage solution that matched our HOA requirements. The Hardie Plank siding matches our house perfectly. Highly recommend the RTO program.",
-        date: "3 weeks ago"
-      }
-    ] as Review[];
-  }
+  return [
+    {
+      author: "Donald J. Hollow",
+      location: "Mt. Pleasant, TX",
+      rating: 5,
+      text: "We knew we would need a storage shed for all our extra stuff, so we went to Lonestar Sheds on hwy. 271 in Mt. Pleasant. We were pleasantly surprised when they listened to what our needs were and showed us various sheds that would solve our problems.",
+      date: "Verified Customer"
+    },
+    {
+      author: "David Spence",
+      location: "Athens, TX",
+      rating: 5,
+      text: "I am very pleased with my storage buildings. From my saleslady Mary in Athens to my delivery and setup by Steven. I shopped many places and many prices and options over a year before deciding on your product. I feel it's the best by far...",
+      date: "Verified Customer"
+    },
+    {
+      author: "Sarah Parker",
+      location: "Commerce, TX",
+      rating: 5,
+      text: "We love our shed that we got from Lonestar, my husband could tell right away that it was built with quality and would last a long time. Another thing we were thankful for is that the shed was delivered to our home at no extra cost.",
+      date: "Verified Customer"
+    }
+  ] as Review[];
 };

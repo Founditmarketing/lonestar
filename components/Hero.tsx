@@ -14,21 +14,20 @@ const Hero: React.FC = () => {
 
   return (
     <section className="relative h-screen min-h-[700px] flex items-center overflow-hidden">
-      {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1587582423116-ec07293f0395?q=80&w=2070&auto=format&fit=crop" 
-          alt="Modern Backyard Studio" 
+          src="https://lonestarshedsllc.com/wp-content/uploads/2022/08/201740054_2314282892036946_1065189005775566930_n-1-e1659714837697.jpeg" 
+          alt="Lone Star Sheds Backyard Studio" 
           className="w-full h-full object-cover animate-fade-in"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/60 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 to-transparent"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full pt-20">
         <div className="max-w-2xl">
           <div className="flex items-center gap-2 mb-6 animate-fade-in-up">
             <div className="bg-gold-500 w-8 h-1 rounded-full"></div>
-            <span className="text-wood-100 text-sm font-bold tracking-widest uppercase">Serving Central Texas Since 2005</span>
+            <span className="text-wood-100 text-sm font-bold tracking-widest uppercase">Serving Northeast Texas Since 1989</span>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-serif font-bold text-white leading-tight mb-6 drop-shadow-lg animate-fade-in-up delay-100">

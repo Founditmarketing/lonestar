@@ -50,14 +50,15 @@ const Footer: React.FC = () => {
           <div className="flex items-start gap-3 mb-6">
              <MapPin size={18} className="text-wood-500 mt-1 shrink-0" />
              <div>
-               <p className="text-sm text-slate-300 font-medium">Headquarters & Sales</p>
+               <p className="text-sm text-slate-300 font-medium">Headquarters</p>
+               <p className="text-xs text-slate-400 mt-1">6425 County Road 4714<br/>Commerce, TX 75428</p>
                <Link to="/locations" className="text-xs text-slate-400 hover:text-wood-400 underline decoration-slate-600 underline-offset-2">
                  Find a Location Near You
                </Link>
              </div>
           </div>
-          <a href="tel:5551234567" className="text-white font-bold hover:text-wood-500 transition-colors block mb-2 text-lg">(555) 123-4567</a>
-          <a href="mailto:sales@lonestarsheds.com" className="text-sm hover:text-white transition-colors text-slate-400">sales@lonestarsheds.com</a>
+          <a href="tel:9377791119" className="text-white font-bold hover:text-wood-500 transition-colors block mb-2 text-lg">(937) 779-1119</a>
+          <a href="mailto:lyndon@lonestarshedsllc.com" className="text-sm hover:text-white transition-colors text-slate-400">lyndon@lonestarshedsllc.com</a>
         </div>
       </div>
       
