@@ -76,7 +76,7 @@ const Features: React.FC = () => {
             >
               {features.map((f, i) => (
                 <motion.div variants={itemVariants} key={i} className="flex gap-5 group">
-                  <div className="text-gold-500 shrink-0 bg-white/5 p-4 rounded-2xl border border-white/10 group-hover:scale-110 group-hover:bg-gold-500/10 transition-all duration-300">
+                  <div className="text-gold-500 shrink-0 group-hover:scale-110 transition-transform duration-300 mt-1">
                     {f.icon}
                   </div>
                   <div>

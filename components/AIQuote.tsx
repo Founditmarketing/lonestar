@@ -111,7 +111,7 @@ const AIQuote: React.FC = () => {
                   animate={{ opacity: 1, scale: 1, rotateY: 0 }}
                   exit={{ opacity: 0, scale: 0.95, rotateY: 10 }}
                   transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                  className="bg-white/90 backdrop-blur-xl border border-white/50 rounded-[2.5rem] p-10 shadow-2xl h-full flex flex-col justify-center relative overflow-hidden"
+                  className="bg-white border border-slate-200 rounded-[2.5rem] p-10 shadow-2xl h-full flex flex-col justify-center relative overflow-hidden"
                 >
                    {/* Decorative glow inside card */}
                    <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -135,7 +135,7 @@ const AIQuote: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="bg-wood-50/50 p-6 rounded-2xl border border-wood-100">
+                    <div className="bg-wood-50 p-6 rounded-2xl border border-wood-100">
                       <label className="text-[10px] font-bold text-wood-600 uppercase tracking-widest mb-2 flex items-center gap-1.5">
                            <Sparkles size={12} className="text-gold-500" /> AI Insight
                       </label>
@@ -171,7 +171,7 @@ const AIQuote: React.FC = () => {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.5 }}
-                  className="glass-dark rounded-[2.5rem] p-1 relative h-full flex flex-col items-center justify-center overflow-hidden"
+                  className="bg-slate-900 rounded-[2.5rem] p-1 relative h-full flex flex-col items-center justify-center overflow-hidden border border-slate-800 shadow-2xl shadow-slate-900/50"
                 >
                    {/* Blueprint Background Effect */}
                    <div className="absolute inset-0 opacity-10" style={{ 
@@ -194,9 +194,9 @@ const AIQuote: React.FC = () => {
                                   transition={{ type: "spring", stiffness: 400, damping: 25 }}
                                   key={i}
                                   onClick={() => setPrompt(p)}
-                                  className="bg-white/5 border border-white/10 text-wood-100 hover:text-white text-sm font-light py-4 px-5 rounded-2xl text-left transition-all flex items-center gap-3 group/btn backdrop-blur-sm"
+                                  className="bg-slate-800 border border-slate-700 text-slate-300 hover:text-white hover:border-slate-600 text-sm font-light py-4 px-5 rounded-2xl text-left transition-all flex items-center gap-3 group/btn"
                                   >
-                                    <div className="bg-white/10 p-2 rounded-full">
+                                    <div className="bg-slate-700 p-2 rounded-full border border-slate-600">
                                         <Lightbulb size={16} className="text-gold-500 group-hover/btn:text-gold-400 shrink-0" />
                                     </div>
                                     {p}
@@ -207,9 +207,9 @@ const AIQuote: React.FC = () => {
 
                       {/* Divider */}
                       <div className="flex items-center gap-4 my-8">
-                          <div className="h-px bg-white/10 flex-1"></div>
-                          <span className="text-white/30 text-[10px] font-bold uppercase tracking-widest">OR BROWSE</span>
-                          <div className="h-px bg-white/10 flex-1"></div>
+                          <div className="h-px bg-slate-800 flex-1"></div>
+                          <span className="text-slate-500 text-[10px] font-bold uppercase tracking-widest">OR BROWSE</span>
+                          <div className="h-px bg-slate-800 flex-1"></div>
                       </div>
 
                       {/* Bottom: Manual Select */}
@@ -219,20 +219,20 @@ const AIQuote: React.FC = () => {
                               <span className="text-xs font-bold uppercase tracking-[0.2em]">Manual Selection</span>
                           </div>
                           <div className="grid grid-cols-2 gap-4">
-                               <button onClick={() => { navigate('/configure?style=lofted_barn'); window.scrollTo(0,0); }} className="bg-slate-800/50 hover:bg-slate-700/80 border border-white/5 hover:border-gold-500/50 p-5 rounded-2xl text-center transition-all duration-300 group/card backdrop-blur-md">
-                                  <Warehouse size={28} className="mx-auto text-wood-300 group-hover/card:text-gold-400 mb-3 group-hover/card:scale-110 transition-transform" strokeWidth={1.5} />
+                               <button onClick={() => { navigate('/configure?style=lofted_barn'); window.scrollTo(0,0); }} className="bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-gold-500/50 p-5 rounded-2xl text-center transition-all duration-300 group/card shadow-inner">
+                                  <Warehouse size={28} className="mx-auto text-slate-400 group-hover/card:text-gold-400 mb-3 group-hover/card:scale-110 transition-transform" strokeWidth={1.5} />
                                   <span className="text-xs font-bold text-white tracking-wider uppercase block">Barns</span>
                                </button>
-                               <button onClick={() => { navigate('/configure?style=utility_standard'); window.scrollTo(0,0); }} className="bg-slate-800/50 hover:bg-slate-700/80 border border-white/5 hover:border-gold-500/50 p-5 rounded-2xl text-center transition-all duration-300 group/card backdrop-blur-md">
-                                  <Hammer size={28} className="mx-auto text-wood-300 group-hover/card:text-gold-400 mb-3 group-hover/card:scale-110 transition-transform" strokeWidth={1.5} />
+                               <button onClick={() => { navigate('/configure?style=utility_standard'); window.scrollTo(0,0); }} className="bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-gold-500/50 p-5 rounded-2xl text-center transition-all duration-300 group/card shadow-inner">
+                                  <Hammer size={28} className="mx-auto text-slate-400 group-hover/card:text-gold-400 mb-3 group-hover/card:scale-110 transition-transform" strokeWidth={1.5} />
                                   <span className="text-xs font-bold text-white tracking-wider uppercase block">Utility</span>
                                </button>
-                               <button onClick={() => { navigate('/configure?style=cabin_lofted'); window.scrollTo(0,0); }} className="bg-slate-800/50 hover:bg-slate-700/80 border border-white/5 hover:border-gold-500/50 p-5 rounded-2xl text-center transition-all duration-300 group/card backdrop-blur-md">
-                                  <Home size={28} className="mx-auto text-wood-300 group-hover/card:text-gold-400 mb-3 group-hover/card:scale-110 transition-transform" strokeWidth={1.5} />
+                               <button onClick={() => { navigate('/configure?style=cabin_lofted'); window.scrollTo(0,0); }} className="bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-gold-500/50 p-5 rounded-2xl text-center transition-all duration-300 group/card shadow-inner">
+                                  <Home size={28} className="mx-auto text-slate-400 group-hover/card:text-gold-400 mb-3 group-hover/card:scale-110 transition-transform" strokeWidth={1.5} />
                                   <span className="text-xs font-bold text-white tracking-wider uppercase block">Cabins</span>
                                </button>
-                               <button onClick={() => { navigate('/configure?style=garage_utility'); window.scrollTo(0,0); }} className="bg-slate-800/50 hover:bg-slate-700/80 border border-white/5 hover:border-gold-500/50 p-5 rounded-2xl text-center transition-all duration-300 group/card backdrop-blur-md">
-                                  <Car size={28} className="mx-auto text-wood-300 group-hover/card:text-gold-400 mb-3 group-hover/card:scale-110 transition-transform" strokeWidth={1.5} />
+                               <button onClick={() => { navigate('/configure?style=garage_utility'); window.scrollTo(0,0); }} className="bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-gold-500/50 p-5 rounded-2xl text-center transition-all duration-300 group/card shadow-inner">
+                                  <Car size={28} className="mx-auto text-slate-400 group-hover/card:text-gold-400 mb-3 group-hover/card:scale-110 transition-transform" strokeWidth={1.5} />
                                   <span className="text-xs font-bold text-white tracking-wider uppercase block">Garages</span>
                                </button>
                           </div>
