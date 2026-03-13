@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Wrench } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
   const navigate = useNavigate();
@@ -12,54 +13,80 @@ const Hero: React.FC = () => {
     }
   };
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.3
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
+    }
+  };
+
   return (
-    <section className="relative h-screen min-h-[700px] flex items-center overflow-hidden">
+    <section className="relative h-screen min-h-[800px] flex items-center overflow-hidden bg-slate-900">
       <div className="absolute inset-0 z-0">
-        <img 
-          src="https://lonestarshedsllc.com/wp-content/uploads/2022/08/201740054_2314282892036946_1065189005775566930_n-1-e1659714837697.jpeg" 
+        <motion.img 
+          initial={{ scale: 1.1 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 20, ease: "linear", repeat: Infinity, repeatType: "reverse" }}
+          src="/images/real/scraped-19.jpeg" 
           alt="Lone Star Sheds Backyard Studio" 
-          className="w-full h-full object-cover animate-fade-in"
+          className="w-full h-full object-cover opacity-80"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-wood-50 via-transparent to-transparent opacity-90 h-1/3 bottom-0 top-auto"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full pt-20">
-        <div className="max-w-2xl">
-          <div className="flex items-center gap-2 mb-6 animate-fade-in-up">
-            <div className="bg-gold-500 w-8 h-1 rounded-full"></div>
-            <span className="text-wood-100 text-sm font-bold tracking-widest uppercase">Serving Northeast Texas Since 1989</span>
-          </div>
+        <motion.div 
+          className="max-w-3xl"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <motion.div variants={itemVariants} className="flex items-center gap-3 mb-8">
+            <div className="bg-gold-500 w-12 h-1 rounded-full shadow-[0_0_10px_rgba(245,158,11,0.5)]"></div>
+            <span className="text-white/80 text-sm font-bold tracking-[0.2em] uppercase">Serving Northeast Texas Since 1989</span>
+          </motion.div>
           
-          <h1 className="text-5xl md:text-7xl font-serif font-bold text-white leading-tight mb-6 drop-shadow-lg animate-fade-in-up delay-100">
-            Solid Construction.<br />
-            <span className="text-wood-200">Honest Pricing.</span>
-          </h1>
+          <motion.h1 variants={itemVariants} className="text-6xl md:text-8xl lg:text-[7rem] font-serif font-bold text-white leading-[0.9] mb-8 drop-shadow-2xl">
+            Solid Build.<br />
+            <span className="text-wood-300 italic">Honest Price.</span>
+          </motion.h1>
           
-          <p className="text-lg md:text-xl text-slate-200 mb-10 leading-relaxed max-w-xl drop-shadow-md font-light animate-fade-in-up delay-200">
+          <motion.p variants={itemVariants} className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed max-w-2xl font-light">
             Handcrafted workspaces, storage, and studios built to withstand Texas weather. Delivered fully assembled to your backyard.
-          </p>
+          </motion.p>
           
-          <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
+          <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-5">
             <button 
               onClick={() => navigate('/models')}
-              className="bg-gold-500 hover:bg-gold-400 text-slate-900 px-8 py-4 rounded-full font-bold transition-all flex items-center justify-center gap-2 group shadow-lg shadow-black/20"
+              className="bg-gold-500 hover:bg-gold-400 text-slate-900 px-8 py-4.5 rounded-full font-bold transition-all flex items-center justify-center gap-3 group shadow-xl shadow-gold-500/20 text-lg"
             >
               View Inventory
-              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+              <ArrowRight size={22} className="group-hover:translate-x-1.5 transition-transform" />
             </button>
             <button 
               onClick={scrollToDesign}
-              className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-full font-bold transition-all shadow-lg flex items-center justify-center gap-2"
+              className="glass text-white px-8 py-4.5 rounded-full font-bold transition-all shadow-xl hover:bg-white/20 flex items-center justify-center gap-3 group text-lg"
             >
-              <Wrench size={18} className="text-gold-400"/>
+              <Wrench size={20} className="text-gold-400 group-hover:rotate-12 transition-transform" />
               Design Your Shed
             </button>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
-
-      {/* Decorative Bottom Curve */}
-      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-wood-50 to-transparent"></div>
     </section>
   );
 };

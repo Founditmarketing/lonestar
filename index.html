@@ -19,47 +19,43 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
+              sans: ['Outfit', 'sans-serif'],
               serif: ['Playfair Display', 'serif'],
             },
             colors: {
-              // Deep Navy / Slate Scale (Replaces previous Brown/Beige)
               wood: {
-                50: '#f0f5fa',
-                100: '#e1e8f0',
-                200: '#c5d3e0',
-                300: '#94aebf',
-                400: '#5e85a3',
-                500: '#3b6080', // Steel Blue
-                600: '#2c4a66',
-                700: '#1f364d', // Deep Navy
-                800: '#152536',
-                900: '#0b141f', // Almost Black
+                50: '#f8fafc',
+                100: '#f1f5f9',
+                200: '#e2e8f0',
+                300: '#cbd5e1',
+                400: '#94a3b8',
+                500: '#64748b',
+                600: '#475569',
+                700: '#334155',
+                800: '#1e293b',
+                900: '#0f172a',
               },
-              // Golden Yellow Accent for CTAs
               gold: {
                 400: '#fbbf24',
                 500: '#f59e0b',
                 600: '#d97706',
                 700: '#b45309',
               },
-              slate: {
-                850: '#1e293b',
-              }
             },
             animation: {
-              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
-              'fade-in': 'fadeIn 0.5s ease-out forwards',
+              'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'fade-in': 'fadeIn 0.8s ease-out forwards',
+              'fast-pulse': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
             },
             keyframes: {
               fadeInUp: {
-                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '0%': { opacity: '0', transform: 'translateY(30px)' },
                 '100%': { opacity: '1', transform: 'translateY(0)' },
               },
               fadeIn: {
