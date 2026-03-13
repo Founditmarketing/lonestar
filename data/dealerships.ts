@@ -28,7 +28,7 @@ export const DEALERSHIPS: Dealership[] = [
     address: "6425 County Road 4714, Commerce, TX 75428",
     name: "LoneStar Sheds LLC",
     mapLink: generateMapLink("6425 County Road 4714, Commerce, TX 75428"),
-    image: "https://images.unsplash.com/photo-1464965103660-6a5665360636?q=80&w=800&auto=format&fit=crop"
+    image: "/images/real/scraped-5.png"
   },
   {
     id: 'denton-sebastain',
@@ -42,7 +42,7 @@ export const DEALERSHIPS: Dealership[] = [
     name: "Lonestar Sheds - Denton",
     hours: "M-F 10-6, Sat 9-6",
     mapLink: generateMapLink("5101 E University Dr. #603, Denton, TX 76208"),
-    image: "https://images.unsplash.com/photo-1595846519845-68e298c2edd8?q=80&w=800&auto=format&fit=crop"
+    image: "/images/real/scraped-22.jpeg"
   },
   {
     id: 'alba-lee',
@@ -55,7 +55,7 @@ export const DEALERSHIPS: Dealership[] = [
     address: "5140 E US HWY 69, Alba, TX 75410",
     name: "Lonestar Sheds - Alba West",
     mapLink: generateMapLink("5140 E US HWY 69, Alba, TX 75410"),
-    image: "https://images.unsplash.com/photo-1487730907576-f87c78491d9d?q=80&w=800&auto=format&fit=crop"
+    image: "/images/real/scraped-6.png"
   },
   {
     id: 'alba-kevin',
@@ -69,7 +69,7 @@ export const DEALERSHIPS: Dealership[] = [
     name: "Lonestar Sheds - Alba East",
     hours: "M-F 10am-5:30pm; Sat 10am-2pm",
     mapLink: generateMapLink("5140 E US HWY 69, Alba, TX 75410"),
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=800&auto=format&fit=crop"
+    image: "/images/real/scraped-21.jpeg"
   },
   {
     id: 'paris-bruce',
@@ -82,7 +82,7 @@ export const DEALERSHIPS: Dealership[] = [
     address: "3665 N Main St, Paris, TX 75460",
     name: "Lone Star Paris",
     mapLink: generateMapLink("3665 N Main St, Paris, TX 75460"),
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop"
+    image: "/images/real/scraped-20.jpeg"
   },
   {
     id: 'mt-pleasant-ross',
@@ -96,7 +96,7 @@ export const DEALERSHIPS: Dealership[] = [
     address: "2635 S Jefferson, Mt Pleasant, TX 75455",
     name: "LoneStar Sheds LLC",
     mapLink: generateMapLink("2635 S Jefferson, Mt Pleasant, TX 75455"),
-    image: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=800&auto=format&fit=crop"
+    image: "/images/real/scraped-19.jpeg"
   },
   {
     id: 'gainesville-john',
@@ -110,7 +110,7 @@ export const DEALERSHIPS: Dealership[] = [
     address: "7803 E Hwy 82, Gainesville, TX 76240",
     name: "82 Building Company",
     mapLink: generateMapLink("7803 E Hwy 82, Gainesville, TX 76240"),
-    image: "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?q=80&w=800&auto=format&fit=crop"
+    image: "/images/real/scraped-22.jpeg"
   },
   {
     id: 'sulphur-springs-clarence',
@@ -123,7 +123,7 @@ export const DEALERSHIPS: Dealership[] = [
     address: "2129 S Broadway, Sulphur Springs, TX 75482",
     name: "Sulphur Springs Sales",
     mapLink: generateMapLink("2129 S Broadway, Sulphur Springs, TX 75482"),
-    image: "https://images.unsplash.com/photo-1470058869958-2a77ade41c02?q=80&w=800&auto=format&fit=crop"
+    image: "/images/real/scraped-20.jpeg"
   },
   {
     id: 'bonham-joyce',
@@ -137,7 +137,7 @@ export const DEALERSHIPS: Dealership[] = [
     name: "2-D Sheds & More",
     hours: "M-F 8-6, Sat 8-1",
     mapLink: generateMapLink("1937 South Hwy 121, Bonham, TX 75418"),
-    image: "https://images.unsplash.com/photo-1605146769289-44011d09034c?q=80&w=800&auto=format&fit=crop"
+    image: "/images/real/scraped-2.png"
   },
   {
     id: 'mineola-dustin',
@@ -151,7 +151,7 @@ export const DEALERSHIPS: Dealership[] = [
     name: "Lonestar Sheds - Mineola",
     hours: "Tue-Sat 9am-5pm",
     mapLink: generateMapLink("2905 US Hwy 80 West, Mineola, TX 75773"),
-    image: "https://images.unsplash.com/photo-1484154218962-a1c429d63670?q=80&w=800&auto=format&fit=crop"
+    image: "/images/real/scraped-24.jpeg"
   },
   {
     id: 'athens-katie',
@@ -165,7 +165,7 @@ export const DEALERSHIPS: Dealership[] = [
     name: "LoneStar Sheds of Athens",
     hours: "Tue-Sat 10am-5pm",
     mapLink: generateMapLink("2940 Hwy 31 East, Athens, TX 75751"),
-    image: "https://images.unsplash.com/photo-1599809275372-b4036281f744?q=80&w=800&auto=format&fit=crop"
+    image: "/images/real/scraped-32.jpeg"
   },
   {
     id: 'princeton-barbara',
@@ -179,7 +179,7 @@ export const DEALERSHIPS: Dealership[] = [
     name: "Princeton Sales Center",
     hours: "M-Sat 8:30-5:30",
     mapLink: generateMapLink("2950 East Princeton Dr, Princeton, TX 75407"),
-    image: "https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=800&auto=format&fit=crop"
+    image: "/images/real/scraped-32.jpeg"
   },
   {
     id: 'tyler-david',
@@ -193,7 +193,7 @@ export const DEALERSHIPS: Dealership[] = [
     name: "Lonestar Sheds - Tyler",
     hours: "M-F 10-5, Sat 10-4, Sun Closed",
     mapLink: generateMapLink("48022 Hwy 69 N, Bullard, TX 75757"),
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop"
+    image: "/images/real/scraped-24.jpeg"
   },
   {
     id: 'gladewater-kevin',
@@ -207,7 +207,7 @@ export const DEALERSHIPS: Dealership[] = [
     name: "Kevin’s Portable Buildings",
     hours: "Open M-F 10am-5pm",
     mapLink: generateMapLink("Oakwood Lane, Gladewater, TX 75647"),
-    image: "https://images.unsplash.com/photo-1449156493391-d2cfa28e468b?q=80&w=800&auto=format&fit=crop"
+    image: "/images/real/scraped-6.png"
   },
   {
     id: 'flint-ron',
@@ -221,6 +221,6 @@ export const DEALERSHIPS: Dealership[] = [
     address: "22053 Hwy 155 S., Flint, TX 75762",
     name: "Flint Sales Center",
     mapLink: generateMapLink("22053 Hwy 155 S., Flint, TX 75762"),
-    image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=800&auto=format&fit=crop"
+    image: "/images/real/scraped-19.jpeg"
   }
 ];

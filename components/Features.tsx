@@ -55,7 +55,7 @@ const Features: React.FC = () => {
           <div className="relative">
             <div className="absolute -inset-4 border-2 border-wood-100 rounded-3xl translate-x-4 translate-y-4 -z-10"></div>
             <img 
-              src="https://images.unsplash.com/photo-1617103996702-96ff29b1c467?q=80&w=1000&auto=format&fit=crop" 
+              src="/images/real/scraped-30.jpeg" 
               alt="Structural framing" 
               className="rounded-2xl shadow-2xl w-full"
             />

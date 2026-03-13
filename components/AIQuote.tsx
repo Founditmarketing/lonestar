@@ -130,7 +130,7 @@ const AIQuote: React.FC = () => {
                     backgroundImage: `linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px)`, 
                     backgroundSize: '30px 30px' 
                  }}></div>
-                 <img src="https://images.unsplash.com/photo-1629350645731-50798155d045?q=80&w=1000&auto=format&fit=crop" className="absolute inset-0 w-full h-full object-cover opacity-10 mix-blend-overlay grayscale group-hover:scale-105 transition-transform duration-1000" alt="Blueprint" />
+                 <img src="/images/real/scraped-24.jpeg" className="absolute inset-0 w-full h-full object-cover opacity-10 mix-blend-overlay grayscale group-hover:scale-105 transition-transform duration-1000" alt="Blueprint" />
                  
                  <div className="relative z-10 w-full px-8 py-10 flex flex-col h-full">
                     {/* Top: AI Prompts */}

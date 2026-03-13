@@ -14,7 +14,7 @@ interface StyleConfig {
 }
 
 // Fallback image in case a specific model image fails to load
-const FALLBACK_IMAGE = 'https://images.unsplash.com/photo-1517646133469-80862ee37e34?q=80&w=1000&auto=format&fit=crop';
+const FALLBACK_IMAGE = '/images/real/scraped-32.jpeg';
 const STORAGE_KEY = 'lonestar_shed_config';
 
 // Updated mapping with Base Prices for RTO Estimations
@@ -24,18 +24,18 @@ const STYLE_GALLERY: Record<string, StyleConfig> = {
     key: 'lofted_barn',
     label: 'Lofted Barn',
     description: 'The iconic gambrel roof maximizes overhead space. Includes dual lofts for roughly 50% more storage.',
-    mainImage: 'https://images.unsplash.com/photo-1517646133469-80862ee37e34?q=80&w=1000&auto=format&fit=crop',
+    mainImage: '/images/real/scraped-32.jpeg',
     basePrice: 3850,
     gallery: [
-      'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=600&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=600&auto=format&fit=crop',
+      '/images/real/scraped-23.jpeg',
+      '/images/real/scraped-30.jpeg',
     ]
   },
   'low_wall_barn': {
     key: 'low_wall_barn',
     label: 'Low Wall Barn',
     description: 'Our most economical option. Classic barn style without the lofts, perfect for basic storage needs.',
-    mainImage: 'https://images.unsplash.com/photo-1444858291040-58f756a3bdd6?q=80&w=1000&auto=format&fit=crop',
+    mainImage: '/images/real/scraped-24.jpeg',
     basePrice: 2950,
     gallery: []
   },
@@ -45,20 +45,20 @@ const STYLE_GALLERY: Record<string, StyleConfig> = {
     key: 'utility_standard',
     label: 'Utility (End Entry)',
     description: 'Classic A-frame gable roof with doors on the end. Available in Painted LP, Hardie, or Dutchlap.',
-    mainImage: 'https://images.unsplash.com/photo-1526411931223-b6b668d270b2?q=80&w=1000&auto=format&fit=crop',
+    mainImage: '/images/real/scraped-22.jpeg',
     basePrice: 3100,
     gallery: [
-      'https://images.unsplash.com/photo-1466048123018-b2230303c62c?q=80&w=600&auto=format&fit=crop'
+      '/images/real/scraped-4.png'
     ]
   },
   'utility_side': {
     key: 'utility_side',
     label: 'Side Utility / Deluxe',
     description: 'A-frame design with entry doors on the side. Includes windows for natural light. A customer favorite.',
-    mainImage: 'https://images.unsplash.com/photo-1596238956976-574213702176?q=80&w=1000&auto=format&fit=crop',
+    mainImage: '/images/real/scraped-24.jpeg',
     basePrice: 4200,
     gallery: [
-      'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=600&auto=format&fit=crop'
+      '/images/real/scraped-30.jpeg'
     ]
   },
 
@@ -67,17 +67,17 @@ const STYLE_GALLERY: Record<string, StyleConfig> = {
      key: 'cabin_lofted',
      label: 'Lofted Cabin',
      description: 'Gambrel roof style with a front porch and overhead lofts. Ideal for a weekend getaway or tiny home.',
-     mainImage: 'https://images.unsplash.com/photo-1449156493391-d2cfa28e468b?q=80&w=1000&auto=format&fit=crop',
+     mainImage: '/images/real/scraped-20.jpeg',
      basePrice: 5400,
      gallery: [
-       'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=600&auto=format&fit=crop'
+       '/images/real/scraped-19.jpeg'
      ]
   },
   'cabin_utility': {
     key: 'cabin_utility',
     label: 'Utility Cabin',
     description: 'Gable roof style with a 4ft or 6ft porch. A simple, elegant solution for a home office or studio.',
-    mainImage: 'https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=1000&auto=format&fit=crop',
+    mainImage: '/images/real/scraped-5.png',
     basePrice: 5100,
     gallery: []
  },
@@ -87,17 +87,17 @@ const STYLE_GALLERY: Record<string, StyleConfig> = {
     key: 'garage_lofted',
     label: 'Lofted Garage',
     description: 'Heavy duty floor (12" o.c.), roll-up door, AND overhead lofts. The ultimate workshop.',
-    mainImage: 'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?q=80&w=1000&auto=format&fit=crop',
+    mainImage: '/images/real/scraped-30.jpeg',
     basePrice: 6800,
     gallery: [
-      'https://images.unsplash.com/photo-1621689729831-7589f7fb0726?q=80&w=600&auto=format&fit=crop'
+      '/images/real/scraped-21.jpeg'
     ]
   },
   'garage_utility': {
     key: 'garage_utility',
     label: 'Utility Garage',
     description: 'Heavy duty floor (12" o.c.) with a roll-up door and classic gable roof profile.',
-    mainImage: 'https://images.unsplash.com/photo-1533036814986-799462c0b62e?q=80&w=1000&auto=format&fit=crop',
+    mainImage: '/images/real/scraped-20.jpeg',
     basePrice: 6400,
     gallery: []
   },
@@ -106,7 +106,7 @@ const STYLE_GALLERY: Record<string, StyleConfig> = {
     key: 'default',
     label: 'Custom Build',
     description: 'We can build to your exact specifications.',
-    mainImage: 'https://images.unsplash.com/photo-1587582423116-ec07293f0395?q=80&w=1000&auto=format&fit=crop',
+    mainImage: '/images/real/scraped-5.png',
     basePrice: 0,
     gallery: []
   }

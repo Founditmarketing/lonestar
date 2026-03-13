@@ -1,49 +1,28 @@
-import { GoogleGenAI, Type } from "@google/genai";
 import { AIAnalysisResult, Review } from "../types";
-
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 export const analyzeShedRequest = async (userPrompt: string): Promise<AIAnalysisResult> => {
   try {
-    const response = await ai.models.generateContent({
-      model: 'gemini-3-flash-preview',
-      contents: `You are a senior design consultant for "Lone Star Sheds".
-
-      CATALOG:
-      - Barns: Lofted (max storage), Low Wall (budget).
-      - Utility: Standard (end door), Side (windows/side door).
-      - Cabins: Lofted or Utility (porches).
-      - Garages: Roll-up door + floor.
-
-      CUSTOMER REQUEST: "${userPrompt}"
-
-      INSTRUCTIONS:
-      1. Select the best model.
-      2. Suggest a standard size (e.g. 10x12).
-      3. Price: Provide a SHORT range only (e.g. "$3,500 - $4,200"). No extra text.
-      4. Reasoning: Professional, persuasive, and detailed. Max 60 words. Three sentences explaining specific benefits for this use case.
-
-      Return JSON.
-      `,
-      config: {
-        responseMimeType: "application/json",
-        responseSchema: {
-          type: Type.OBJECT,
-          properties: {
-            recommendedStyle: { type: Type.STRING },
-            suggestedSize: { type: Type.STRING },
-            reasoning: { type: Type.STRING },
-            estimatedPriceRange: { type: Type.STRING }
-          },
-          required: ["recommendedStyle", "suggestedSize", "reasoning", "estimatedPriceRange"]
-        }
-      }
+    const response = await fetch('/api/chat', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ prompt: userPrompt }),
     });
 
-    return JSON.parse(response.text || '{}') as AIAnalysisResult;
+    if (!response.ok) {
+      const errorData = await response.json();
+      if (errorData.fallback) {
+        return errorData.fallback as AIAnalysisResult;
+      }
+      throw new Error(`API error: ${response.status}`);
+    }
+
+    const data = await response.json();
+    return data as AIAnalysisResult;
   } catch (error) {
     console.error("AI Analysis failed:", error);
-    // Fallback if AI fails
+    // Fallback if AI or network fails
     return {
       recommendedStyle: "Side Utility",
       suggestedSize: "10x16",
