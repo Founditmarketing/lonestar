@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowUpRight, X, Check, ArrowRight, Ruler, Star } from 'lucide-react';
+import { ArrowUpRight, X, Check, ArrowRight, Ruler, Star, Sparkles } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ShedModel } from '../types';
@@ -88,7 +88,7 @@ const Models: React.FC = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="absolute top-5 left-5 glass px-4 py-1.5 rounded-full text-xs font-bold text-slate-800 shadow-lg">
+                <div className="absolute top-5 left-5 bg-slate-900/90 backdrop-blur-md border border-slate-700/50 px-4 py-1.5 rounded-full text-xs font-bold text-white shadow-xl">
                   Starting at ${model.startPrice.toLocaleString()}
                 </div>
               </div>
@@ -116,6 +116,34 @@ const Models: React.FC = () => {
               </div>
             </motion.div>
           ))}
+        </div>
+      </div>
+
+      {/* AI Recommender CTA */}
+      <div className="bg-slate-900 py-24 px-6 text-center relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+           <div className="absolute inset-0 bg-wood-500/10 opacity-20" style={{ backgroundImage: 'radial-gradient(circle, #ffffff 1px, transparent 1px)', backgroundSize: '20px 20px' }}></div>
+        </div>
+        <div className="relative z-10 max-w-3xl mx-auto">
+           <Sparkles className="mx-auto text-gold-500 mb-6" size={48} strokeWidth={1.5} />
+           <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6 drop-shadow-md">
+             Not sure which model is right for you?
+           </h2>
+           <p className="text-xl text-slate-400 mb-10 font-light max-w-2xl mx-auto leading-relaxed">
+             Try our AI Build Recommender. Tell us what you plan to do, and we'll instantly match you with the perfect building style, size, and estimate.
+           </p>
+           <button 
+             onClick={() => {
+               navigate('/');
+               setTimeout(() => {
+                 const element = document.getElementById('ai-quote');
+                 if (element) element.scrollIntoView({ behavior: 'smooth' });
+               }, 100);
+             }}
+             className="px-10 py-4 bg-white hover:bg-slate-50 text-slate-900 rounded-full font-bold text-lg shadow-xl transition-all hover:-translate-y-1 inline-flex items-center gap-3 border border-slate-200"
+           >
+             Try AI Recommender <ArrowRight size={20} className="text-gold-500" />
+           </button>
         </div>
       </div>
 

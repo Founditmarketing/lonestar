@@ -39,7 +39,7 @@ const FeaturedModels: React.FC = () => {
                             alt={model.name} 
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                         />
-                         <div className="absolute top-3 right-3 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-slate-900 shadow-sm border border-white/20">
+                         <div className="absolute top-3 right-3 bg-slate-900/90 backdrop-blur-md border border-slate-700/50 px-3 py-1 rounded-full text-xs font-bold text-white shadow-xl">
                             From ${model.startPrice.toLocaleString()}
                         </div>
                     </div>
