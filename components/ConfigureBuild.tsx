@@ -160,14 +160,23 @@ const determineStyleKey = (styleInput: string): string => {
   return 'default';
 };
 
+const COLOR_IMAGE_MAP: Record<string, string> = {
+  'Light Grey': '/images/real/scraped-32.jpeg',
+  'Charcoal': '/images/real/scraped-30.jpeg',
+  'White': '/images/real/scraped-4.png',
+  'Barn Red': '/images/real/scraped-23.jpeg',
+  'Buckskin': '/images/real/scraped-3.jpeg',
+  'Taupe': '/images/real/scraped-2.jpeg',
+};
+
 const COLORS = {
   siding: [
-    { name: 'Light Grey', class: 'bg-gray-300' },
-    { name: 'Charcoal', class: 'bg-slate-700' },
-    { name: 'White', class: 'bg-white border border-gray-200' },
-    { name: 'Barn Red', class: 'bg-red-800' },
-    { name: 'Buckskin', class: 'bg-yellow-700' },
-    { name: 'Taupe', class: 'bg-[#bcaaa4]' },
+    { name: 'Light Grey', class: 'bg-gray-300', previewImage: COLOR_IMAGE_MAP['Light Grey'] },
+    { name: 'Charcoal', class: 'bg-slate-700', previewImage: COLOR_IMAGE_MAP['Charcoal'] },
+    { name: 'White', class: 'bg-white border border-gray-200', previewImage: COLOR_IMAGE_MAP['White'] },
+    { name: 'Barn Red', class: 'bg-red-800', previewImage: COLOR_IMAGE_MAP['Barn Red'] },
+    { name: 'Buckskin', class: 'bg-yellow-700', previewImage: COLOR_IMAGE_MAP['Buckskin'] },
+    { name: 'Taupe', class: 'bg-[#bcaaa4]', previewImage: COLOR_IMAGE_MAP['Taupe'] },
   ],
   trim: [
     { name: 'White', class: 'bg-white border border-gray-200' },
@@ -376,7 +385,8 @@ ${formData.notes}
     }
   };
 
-  const currentMainImage = activeImage || styleConfig.mainImage;
+  const selectedColorImage = COLORS.siding.find(c => c.name === sidingColor)?.previewImage;
+  const currentMainImage = activeImage || selectedColorImage || styleConfig.mainImage;
   const isAIRecommended = initialData && determineStyleKey(initialData.recommendedStyle) === selectedStyleKey;
   const isSharedView = !location.state?.result && !!searchParams.get('style');
   const selectedCategoryTitle = MODEL_CATEGORIES.find(c => c.keys.includes(selectedStyleKey))?.title || 'Custom Build';

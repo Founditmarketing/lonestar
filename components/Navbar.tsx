@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
 
   const navItems = [
     { label: 'Models', id: 'models', path: '/models' },
-    { label: 'Design Studio', id: 'design-studio' },
+    { label: 'Design Studio', id: 'design-studio', path: '/configure' },
     { label: 'About Us', id: 'about', path: '/about' },
     { label: 'Locations', id: 'locations', path: '/locations' },
   ];
@@ -80,7 +80,7 @@ const Navbar: React.FC = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
               <button 
                 key={item.label} 
@@ -108,9 +108,9 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex items-center gap-6">
-            <a href="tel:9377791119" className={`font-serif font-bold text-lg hover:opacity-75 transition-opacity tracking-wide ${textColorClass}`}>
-              (937) 779-1119
+          <div className="hidden lg:flex items-center gap-6">
+            <a href="tel:2545550198" className={`font-serif font-bold text-lg hover:opacity-75 transition-opacity tracking-wide ${textColorClass}`}>
+              (254) 555-SHED
             </a>
             <button 
               onClick={() => navigate('/configure')} 
@@ -127,7 +127,7 @@ const Navbar: React.FC = () => {
 
           {/* Mobile Toggle */}
           <button 
-            className={`md:hidden relative z-50 p-2 transition-colors ${textColorClass} ${isMobileMenuOpen ? '!text-slate-900' : ''}`}
+            className={`lg:hidden relative z-50 p-2 transition-colors ${textColorClass} ${isMobileMenuOpen ? '!text-slate-900' : ''}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -143,7 +143,7 @@ const Navbar: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 bg-white/95 backdrop-blur-xl z-40 md:hidden flex flex-col pt-24"
+            className="fixed inset-0 bg-white/95 backdrop-blur-xl z-40 lg:hidden flex flex-col pt-24"
           >
             <div className="flex-1 flex flex-col justify-center px-8 gap-8 pb-12">
                <div className="space-y-4">
@@ -180,13 +180,13 @@ const Navbar: React.FC = () => {
                     View Digital Brochure
                   </a>
                   <a 
-                    href="tel:9377791119"
+                    href="tel:2545550198"
                     className="flex items-center gap-4 text-wood-700 font-semibold"
                   >
                     <div className="bg-wood-50 p-4 rounded-2xl text-wood-600">
                         <Phone size={20} />
                     </div>
-                    (937) 779-1119
+                    (254) 555-SHED
                   </a>
                </motion.div>
 

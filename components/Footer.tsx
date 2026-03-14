@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Instagram, Hammer, FileText, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Hammer, FileText, MapPin, ShieldCheck, CreditCard } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
@@ -39,8 +39,9 @@ const Footer: React.FC = () => {
                     <FileText size={14} /> Download Brochure
                 </a>
             </li>
-            <li><Link to="/configure" className="hover:text-wood-500 transition-colors block">Site Prep Guide</Link></li>
-            <li><Link to="/configure" className="hover:text-wood-500 transition-colors block">Rent-to-Own Info</Link></li>
+            <li><Link to="/prep" className="hover:text-wood-500 transition-colors block">Site Prep Guide</Link></li>
+            <li><Link to="/rto" className="hover:text-wood-500 transition-colors block">Rent-to-Own Info</Link></li>
+            <li><Link to="/faq" className="hover:text-wood-500 transition-colors block">FAQ</Link></li>
             <li><Link to="/locations" className="hover:text-wood-500 transition-colors block">Dealer Network</Link></li>
           </ul>
         </div>
@@ -57,8 +58,26 @@ const Footer: React.FC = () => {
                </Link>
              </div>
           </div>
-          <a href="tel:9377791119" className="text-white font-bold hover:text-wood-500 transition-colors block mb-2 text-lg">(937) 779-1119</a>
+          <a href="tel:2545550198" className="text-white font-bold hover:text-wood-500 transition-colors block mb-2 text-lg">(254) 555-SHED</a>
           <a href="mailto:lyndon@lonestarshedsllc.com" className="text-sm hover:text-white transition-colors text-slate-400">lyndon@lonestarshedsllc.com</a>
+        </div>
+      </div>
+      
+      {/* Trust Indicators Row */}
+      <div className="max-w-7xl mx-auto px-6 py-6 border-b border-wood-900 flex flex-col sm:flex-row justify-center sm:gap-12 items-center text-sm font-semibold tracking-wide text-slate-400 gap-4">
+        <div className="flex items-center gap-2">
+            <svg className="w-6 h-6 text-blue-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-2h2v2zm0-4h-2V7h2v6zm4 4h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+            BBB Accredited Business A+
+        </div>
+        <div className="hidden sm:block w-px h-4 bg-wood-800"></div>
+        <div className="flex items-center gap-2">
+            <ShieldCheck size={20} className="text-gold-500" />
+            50-Year Siding Warranty
+        </div>
+        <div className="hidden sm:block w-px h-4 bg-wood-800"></div>
+        <div className="flex items-center gap-2">
+            <CreditCard size={20} className="text-green-500" />
+            No Credit Check Rent-to-Own
         </div>
       </div>
       

@@ -86,7 +86,7 @@
           scrollbar-width: none;  /* Firefox */
       }
     </style>
-  <script type="importmap">
+<script type="importmap">
 {
   "imports": {
     "react/": "https://esm.sh/react@^19.2.4/",
@@ -99,6 +99,63 @@
 }
 </script>
 <link rel="stylesheet" href="/index.css">
+
+<!-- Structured Data / JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "name": "Lone Star Sheds",
+      "image": "https://lonestarshedsllc.com/wp-content/uploads/2022/08/LONE-STARSHEDS-LLC-3.png",
+      "telephone": "(254) 555-SHED",
+      "url": "https://lonestarshedsllc.com",
+      "description": "Premium handcrafted sheds, cabins, barns, and portable buildings built in Central Texas. 50-year warranty and rent-to-own available.",
+      "areaServed": "Texas",
+      "priceRange": "$$$"
+    },
+    {
+      "@type": "Product",
+      "name": "Custom Texas Handcrafted Sheds",
+      "image": "https://lonestarshedsllc.com/wp-content/uploads/2022/08/202068479_2314282782036957_1958051113094853172_n.jpeg",
+      "description": "Custom built portable buildings including lofts, barns, utility sheds, and cabins.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lone Star Sheds"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "2950",
+        "highPrice": "15000",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you offer rent-to-own?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer flexible rent-to-own programs with no credit check required on all of our sheds and portable buildings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What warranty comes with the buildings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our buildings feature LP SmartSide siding which comes with an industry-leading 50-year warranty against rot and decay."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
   <body class="bg-wood-50 text-slate-800 antialiased selection:bg-gold-500 selection:text-white">
     <div id="root"></div>

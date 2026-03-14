@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
@@ -13,6 +13,9 @@ import Testimonials from './components/Testimonials';
 import About from './components/About';
 import NotFound from './components/NotFound';
 import Legal from './components/Legal';
+import FAQ from './components/FAQ';
+import RentToOwn from './components/RentToOwn';
+import SitePrep from './components/SitePrep';
 
 // Helper component to scroll to top on route change
 const ScrollToTop = () => {
@@ -69,6 +72,30 @@ const AboutPage: React.FC = () => (
   </>
 );
 
+const FAQPage: React.FC = () => (
+  <>
+    <Navbar />
+    <FAQ />
+    <Footer />
+  </>
+);
+
+const RTOPage: React.FC = () => (
+  <>
+    <Navbar />
+    <RentToOwn />
+    <Footer />
+  </>
+);
+
+const PrepPage: React.FC = () => (
+  <>
+    <Navbar />
+    <SitePrep />
+    <Footer />
+  </>
+);
+
 const PrivacyPage: React.FC = () => (
   <>
     <Navbar />
@@ -87,7 +114,7 @@ const TermsPage: React.FC = () => (
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <ScrollToTop />
       <div className="min-h-screen bg-wood-50">
         <Routes>
@@ -96,12 +123,15 @@ function App() {
           <Route path="/configure" element={<ConfigurePage />} />
           <Route path="/locations" element={<LocationsPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/faq" element={<FAQPage />} />
+          <Route path="/rto" element={<RTOPage />} />
+          <Route path="/prep" element={<PrepPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/terms" element={<TermsPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
