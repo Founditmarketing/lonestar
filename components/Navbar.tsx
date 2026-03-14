@@ -74,7 +74,7 @@ const Navbar: React.FC = () => {
               <img 
                 src="https://lonestarshedsllc.com/wp-content/uploads/2022/08/LONE-STARSHEDS-LLC-3.png" 
                 alt="Lone Star Sheds Logo" 
-                className={`h-10 sm:h-12 w-auto object-contain transition-all duration-300 ${isTransparent ? 'brightness-0 invert' : ''}`}
+                className={`h-10 sm:h-12 w-auto object-contain transition-all duration-300 ${isTransparent ? 'brightness-0 invert' : 'brightness-0'}`}
               />
             </div>
           </Link>
