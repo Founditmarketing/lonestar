@@ -7,7 +7,7 @@ export const MODELS: ShedModel[] = [
     description: 'The classic storage powerhouse. Features a gambrel roof that provides maximum overhead storage. Dual lofts included standard.',
     features: ['Painted LP SmartSide', 'Dual Lofts', 'Double Barn Doors'],
     startPrice: 3850,
-    imageUrl: 'https://lonestarshedsllc.com/wp-content/uploads/2022/08/202068479_2314282782036957_1958051113094853172_n.jpeg',
+    imageUrl: '/images/real/scraped-10.png',
     configKey: 'lofted_barn',
     specs: [
       { label: 'Wall Height', value: '6\' 3" Standard' },
@@ -24,7 +24,7 @@ export const MODELS: ShedModel[] = [
     description: 'Built for durability and ease of access. Features fire-resistant Hardie Plank siding, side-entry double doors, and two 2x3 windows.',
     features: ['Hardie Plank Siding', '2x3 Windows Included', 'Side Entry'],
     startPrice: 4200,
-    imageUrl: 'https://lonestarshedsllc.com/wp-content/uploads/2022/08/201281893_2314282778703624_7723261007237934377_n.jpeg',
+    imageUrl: '/images/real/scraped-32.jpeg',
     configKey: 'utility_side',
     specs: [
       { label: 'Wall Height', value: '7\' 8" Extra Height' },
@@ -41,7 +41,7 @@ export const MODELS: ShedModel[] = [
     description: 'The ultimate workshop. Reinforced floors (12" on-center), heavy-duty roll-up door, solid walk-in door, and one 2x3 window.',
     features: ['Roll-Up Garage Door', 'Reinforced Floor', 'Overhead Lofts'],
     startPrice: 6800,
-    imageUrl: 'https://lonestarshedsllc.com/wp-content/uploads/2022/08/275950964_2536393846492515_5266801143492753742_n.jpeg',
+    imageUrl: '/images/real/scraped-63.jpeg',
     configKey: 'garage_lofted',
     specs: [
       { label: 'Floor Joists', value: '12" On-Center Treated' },
@@ -58,7 +58,7 @@ export const MODELS: ShedModel[] = [
     description: 'Perfect for a weekend getaway or office. Includes a 4ft or 6ft porch with railing, 3 windows, and a 9-lite entry door.',
     features: ['Front Porch', '3x Windows', 'Cathedral Ceiling'],
     startPrice: 5400,
-    imageUrl: 'https://lonestarshedsllc.com/wp-content/uploads/2022/08/276075375_2536393776492522_458653350074604036_n.jpeg',
+    imageUrl: '/images/real/scraped-52.jpeg',
     configKey: 'cabin_lofted',
     specs: [
       { label: 'Porch Depth', value: '4ft or 6ft' },
@@ -75,7 +75,7 @@ export const MODELS: ShedModel[] = [
     description: 'A practical, attractive option for an office or studio. Features a gable roof profile with a cozy 4ft front porch.',
     features: ['Front Porch', 'Gable Roof', 'High Sidewalls'],
     startPrice: 5100,
-    imageUrl: 'https://lonestarshedsllc.com/wp-content/uploads/2022/08/236199884_2358240684307833_1133409526224825962_n.jpeg',
+    imageUrl: '/images/real/scraped-19.jpeg',
     configKey: 'cabin_utility',
     specs: [
       { label: 'Porch', value: '4ft Standard' },
@@ -92,7 +92,7 @@ export const MODELS: ShedModel[] = [
     description: 'Our most economical solution. The classic barn shape in a compact form. Perfect for lawn mowers and garden tools.',
     features: ['Budget Friendly', 'Classic Barn Look', 'Double Doors'],
     startPrice: 2950,
-    imageUrl: 'https://lonestarshedsllc.com/wp-content/uploads/2022/08/263630932_2454944901304077_8236880925034651235_n.jpeg',
+    imageUrl: '/images/real/scraped-4.png',
     configKey: 'low_wall_barn',
     specs: [
       { label: 'Wall Height', value: '4ft Side Walls' },
@@ -109,7 +109,7 @@ export const MODELS: ShedModel[] = [
     description: 'A versatile A-frame gable roof design. Tall walls allow for shelving and tall equipment. Simple, clean, and functional.',
     features: ['End Entry', 'Gable Roof', 'High Walls'],
     startPrice: 3100,
-    imageUrl: 'https://lonestarshedsllc.com/wp-content/uploads/2022/08/274917987_2523457817786118_8177081458872085882_n.jpeg',
+    imageUrl: '/images/real/scraped-65.jpeg',
     configKey: 'utility_standard',
     specs: [
       { label: 'Wall Height', value: '7\' 8" Walls' },

@@ -83,18 +83,21 @@ const AIQuote: React.FC = () => {
                viewport={{ once: true }}
                transition={{ duration: 0.6, delay: 0.3 }}
                onSubmit={handleSubmit} 
-               className="relative"
+               className="relative group"
             >
+              {/* Glowing background effect for the input area */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-gold-500/30 to-wood-500/30 rounded-[2rem] blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+              
               <textarea
                 value={prompt}
                 onChange={(e) => setPrompt(e.target.value)}
-                placeholder="Describe your vision here..."
-                className="w-full p-8 pr-20 bg-white border border-slate-200 rounded-3xl focus:ring-4 focus:ring-gold-500/20 focus:border-gold-500 outline-none resize-none h-48 text-lg shadow-xl shadow-slate-200/50 transition-all placeholder:text-slate-400 font-light"
+                placeholder="Describe your vision here... (e.g. 'I need a 12x20 workshop with electricity')"
+                className="relative w-full p-8 pr-20 bg-white border-2 border-slate-200/80 rounded-[2rem] focus:ring-4 focus:ring-gold-500/20 focus:border-gold-500 outline-none resize-none h-48 text-xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all placeholder:text-slate-400 font-medium text-slate-800"
               />
               <button 
                 type="submit"
                 disabled={isLoading}
-                className="absolute bottom-6 right-6 bg-slate-900 hover:bg-wood-800 text-gold-500 hover:text-gold-400 p-4 rounded-2xl transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:-translate-y-1 hover:shadow-xl"
+                className="absolute bottom-6 right-6 bg-slate-900 hover:bg-wood-800 text-gold-500 hover:text-gold-400 p-4 rounded-2xl transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:-translate-y-1 hover:shadow-xl z-10"
               >
                 {isLoading ? <Loader2 size={24} className="animate-spin" /> : <Send size={24} />}
               </button>
