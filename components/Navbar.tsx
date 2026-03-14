@@ -70,11 +70,11 @@ const Navbar: React.FC = () => {
             : 'bg-transparent py-6 px-6 sm:px-8'
         }`}>
           <Link to="/" className="flex items-center gap-2.5 group relative z-50">
-            <div className="p-1.5 transition-all duration-300">
+            <div className="bg-white/90 p-1.5 rounded-xl transition-all duration-300">
               <img 
                 src="https://lonestarshedsllc.com/wp-content/uploads/2022/08/LONE-STARSHEDS-LLC-3.png" 
                 alt="Lone Star Sheds Logo" 
-                className={`h-10 sm:h-12 w-auto object-contain transition-all duration-300 ${isTransparent ? 'brightness-0 invert' : 'brightness-0'}`}
+                className="h-10 sm:h-12 w-auto object-contain transition-all duration-300"
               />
             </div>
           </Link>
