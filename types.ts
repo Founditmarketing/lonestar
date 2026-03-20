@@ -1,3 +1,10 @@
+export interface PricingRow {
+  size: string;
+  price: string;
+  rto36: string;
+  rto60: string;
+}
+
 export interface ShedModel {
   id: string;
   name: string;
@@ -5,8 +12,10 @@ export interface ShedModel {
   imageUrl: string;
   features: string[];
   startPrice: number;
+  category?: 'Garages' | 'Barns' | 'Cabins' | 'Cottages' | 'Utility Buildings' | 'Deluxe';
   configKey?: string;
   specs?: { label: string; value: string }[];
+  pricingTable?: PricingRow[];
 }
 
 export enum BuildingStyle {

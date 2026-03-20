@@ -1,13 +1,20 @@
 import React, { useState } from 'react';
 import { ArrowUpRight, X, Check, ArrowRight, Ruler, Star, Sparkles } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ShedModel } from '../types';
 import { MODELS } from '../data/models';
 
 const Models: React.FC = () => {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const [activeModel, setActiveModel] = useState<ShedModel | null>(null);
+
+  const categoryFilter = searchParams.get('category');
+
+  const filteredModels = categoryFilter
+    ? MODELS.filter(m => m.category === categoryFilter)
+    : MODELS;
 
   const handleCustomize = (model: ShedModel) => {
     navigate(`/configure?style=${model.configKey}`);
@@ -44,7 +51,11 @@ const Models: React.FC = () => {
                 transition={{ duration: 0.8, delay: 0.1 }}
                 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6 drop-shadow-xl"
             >
-                Masterfully <span className="text-wood-300 italic">Built</span>
+                {categoryFilter ? (
+                  <>{categoryFilter} <span className="text-wood-300 italic">Collection</span></>
+                ) : (
+                  <>Masterfully <span className="text-wood-300 italic">Built</span></>
+                )}
             </motion.h1>
             
             <motion.p 
@@ -62,16 +73,14 @@ const Models: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 py-24">
         {/* Staggered Grid Layout */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 relative z-10">
-          {MODELS.map((model, index) => (
+          {filteredModels.map((model, index) => (
             <motion.div 
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.7, delay: index * 0.15 }}
               key={model.id} 
-              className={`group bg-white rounded-3xl overflow-hidden shadow-xl shadow-wood-900/5 flex flex-col border border-white relative transition-all duration-500 hover:shadow-2xl hover:shadow-wood-900/10 hover:-translate-y-2 ${
-                  index % 3 === 1 ? 'lg:mt-16' : index % 3 === 2 ? 'lg:mt-32' : '' // Staggered masonry effect
-              }`}
+              className="group bg-white rounded-3xl overflow-hidden shadow-xl shadow-wood-900/5 flex flex-col border border-white relative transition-all duration-500 hover:shadow-2xl hover:shadow-wood-900/10 hover:-translate-y-2"
             >
               
               {/* Popular Badge */}
@@ -214,6 +223,38 @@ const Models: React.FC = () => {
                         ))}
                       </div>
                   </div>
+
+                  {activeModel.pricingTable && activeModel.pricingTable.length > 0 && (
+                    <div className="bg-white border border-wood-100 rounded-3xl overflow-hidden mb-10 shadow-sm flex flex-col">
+                      <div className="bg-slate-50 border-b border-wood-100 px-8 py-5">
+                        <h4 className="font-bold text-slate-900 flex items-center gap-2">
+                          Available Sizes & Pricing
+                        </h4>
+                      </div>
+                      <div className="max-h-64 overflow-y-auto custom-scrollbar">
+                        <table className="w-full text-left text-sm relative">
+                          <thead className="bg-slate-50 sticky top-0 border-b border-wood-200 shadow-sm z-10 backdrop-blur-md bg-slate-50/90">
+                            <tr>
+                              <th className="px-8 py-3.5 text-slate-500 font-bold text-xs uppercase tracking-wider">Size</th>
+                              <th className="px-4 py-3.5 text-slate-500 font-bold text-xs uppercase tracking-wider">Price</th>
+                              <th className="px-4 py-3.5 text-slate-500 font-bold text-xs uppercase tracking-wider">36 Mo. RTO</th>
+                              <th className="px-8 py-3.5 text-slate-500 font-bold text-xs uppercase tracking-wider">60 Mo. RTO</th>
+                            </tr>
+                          </thead>
+                          <tbody className="divide-y divide-slate-100">
+                            {activeModel.pricingTable.map((row, idx) => (
+                              <tr key={idx} className="hover:bg-slate-50 transition-colors group">
+                                <td className="px-8 py-3.5 font-bold text-slate-800">{row.size}</td>
+                                <td className="px-4 py-3.5 font-semibold text-slate-700">{row.price}</td>
+                                <td className="px-4 py-3.5 text-slate-600">{row.rto36}</td>
+                                <td className="px-8 py-3.5 text-slate-400 group-hover:text-slate-500">{row.rto60}</td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  )}
 
                   <div className="flex flex-col gap-4 mt-auto">
                     <button 

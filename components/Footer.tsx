@@ -7,9 +7,14 @@ const Footer: React.FC = () => {
     <footer className="bg-slate-900 text-slate-300 py-16 border-t border-wood-900">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 border-b border-slate-800 pb-12">
         <div className="md:col-span-1">
-          <Link to="/" className="flex items-center gap-2 mb-6 text-white group">
-            <Hammer size={24} className="group-hover:text-wood-500 transition-colors" />
-            <span className="text-xl font-serif font-bold">LONE STAR SHEDS</span>
+          <Link to="/" className="flex items-center gap-2.5 mb-6 text-white group w-fit">
+            <div className="transition-all duration-300">
+              <img 
+                src="/logo-new.png" 
+                alt="Lone Star Sheds Logo" 
+                className="h-12 w-auto object-contain transition-opacity"
+              />
+            </div>
           </Link>
           <p className="text-sm leading-relaxed mb-6 text-slate-400">
             Handcrafted outdoor structures built with integrity. Offering 50-year warranty LP SmartSide® siding and hurricane-rated framing.
