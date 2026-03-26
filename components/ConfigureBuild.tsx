@@ -232,6 +232,8 @@ const ConfigureBuild: React.FC = () => {
   const [isCopied, setIsCopied] = useState(false);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [isMobilePreviewOpen, setIsMobilePreviewOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState('');
   
   // New State for Customization
   const [sidingColor, setSidingColor] = useState(() => savedConfig?.sidingColor || 'Light Grey');
@@ -312,44 +314,46 @@ const ConfigureBuild: React.FC = () => {
   const securityDeposit = rtoTerm === 60 ? 150 : 0;
   const dueToday = estimatedRtoPayment + securityDeposit;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Construct Email Body
+    setIsSubmitting(true);
+    setSubmitError('');
+
     const dealer = DEALERSHIPS.find(d => d.id === selectedDealership);
-    const subject = `New Quote Request: ${styleConfig.label} - ${sizeConfig.id}`;
-    
-    const body = `
-New Custom Shed Quote Request
 
---- CUSTOMER INFO ---
-Name: ${formData.name}
-Phone: ${formData.phone}
-Email: ${formData.email}
-Preferred Dealer: ${dealer ? dealer.city : 'None Selected'}
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          notes: formData.notes,
+          model: styleConfig.label,
+          size: sizeConfig.id,
+          sidingColor,
+          trimColor,
+          roofType,
+          cashPrice: `$${totalPrice.toLocaleString()}`,
+          rtoTerm,
+          rtoPayment: `$${estimatedRtoPayment}`,
+          dealership: dealer ? `${dealer.city}, TX` : 'No preference',
+        }),
+      });
 
---- BUILD SPECS ---
-Model: ${styleConfig.label}
-Size: ${sizeConfig.id}
-Siding Color: ${sidingColor}
-Trim Color: ${trimColor}
-Roof: ${roofType}
+      const data = await response.json();
 
---- PRICING (EST) ---
-Cash Price: $${totalPrice.toLocaleString()}
-RTO Term: ${rtoTerm} Months
-Monthly Pmt: $${estimatedRtoPayment}
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send your request. Please try again.');
+      }
 
---- NOTES ---
-${formData.notes}
-    `.trim();
-
-    // Open Mail Client
-    window.location.href = `mailto:sales@lonestarsheds.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-    setTimeout(() => {
-        setShowSuccessModal(true);
-    }, 1000);
+      setShowSuccessModal(true);
+    } catch (err: any) {
+      setSubmitError(err.message || 'Something went wrong. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const closeSuccessModal = () => {
@@ -950,12 +954,32 @@ ${formData.notes}
                   </div>
                 </div>
 
+                {submitError && (
+                  <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-xl flex items-start gap-3 animate-fade-in">
+                    <AlertCircle size={20} className="shrink-0 mt-0.5" />
+                    <div>
+                      <p className="font-bold text-sm">Something went wrong</p>
+                      <p className="text-xs mt-1">{submitError}</p>
+                    </div>
+                  </div>
+                )}
+
                 <button 
                   type="submit" 
-                  className="w-full bg-gold-500 hover:bg-gold-400 text-slate-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+                  disabled={isSubmitting}
+                  className="w-full bg-gold-500 hover:bg-gold-400 text-slate-900 font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  <Send size={20} />
-                  Submit Custom Quote Request
+                  {isSubmitting ? (
+                    <>
+                      <svg className="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path></svg>
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      <Send size={20} />
+                      Submit Custom Quote Request
+                    </>
+                  )}
                 </button>
               </form>
             </div>
