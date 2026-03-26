@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lone Star Sheds | Premium Custom Buildings Texas</title>
+    <meta name="description" content="Design your dream shed with our AI-powered studio. Handcrafted quality, 50-year warranty, and rent-to-own options available across Central Texas." />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛖</text></svg>" />
+
+    <!-- Open Graph for Sharing -->
+    <meta property="og:title" content="Lone Star Sheds - Design Your Custom Build" />
+    <meta property="og:description" content="Use our AI tool to find the perfect shed, barn, or cabin. Handcrafted in Texas." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1587582423116-ec07293f0395?q=80&w=1200&auto=format&fit=crop" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#1e3a8a" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Outfit', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            colors: {
+              wood: {
+                50: '#f8fafc',
+                100: '#f1f5f9',
+                200: '#e2e8f0',
+                300: '#cbd5e1',
+                400: '#94a3b8',
+                500: '#64748b',
+                600: '#475569',
+                700: '#334155',
+                800: '#1e293b',
+                900: '#0f172a',
+              },
+              gold: {
+                400: '#fbbf24',
+                500: '#f59e0b',
+                600: '#d97706',
+                700: '#b45309',
+              },
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'fade-in': 'fadeIn 0.8s ease-out forwards',
+              'fast-pulse': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(30px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Smooth scrolling for the whole page */
+      html {
+        scroll-behavior: smooth;
+      }
+      .delay-100 { animation-delay: 100ms; }
+      .delay-200 { animation-delay: 200ms; }
+      .delay-300 { animation-delay: 300ms; }
+      
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^6.22.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+
+<!-- Structured Data / JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "name": "Lone Star Sheds",
+      "image": "https://lonestarshedsllc.com/wp-content/uploads/2022/08/LONE-STARSHEDS-LLC-3.png",
+      "telephone": "(254) 555-SHED",
+      "url": "https://lonestarshedsllc.com",
+      "description": "Premium handcrafted sheds, cabins, barns, and portable buildings built in Central Texas. 50-year warranty and rent-to-own available.",
+      "areaServed": "Texas",
+      "priceRange": "$$$"
+    },
+    {
+      "@type": "Product",
+      "name": "Custom Texas Handcrafted Sheds",
+      "image": "https://lonestarshedsllc.com/wp-content/uploads/2022/08/202068479_2314282782036957_1958051113094853172_n.jpeg",
+      "description": "Custom built portable buildings including lofts, barns, utility sheds, and cabins.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lone Star Sheds"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "2950",
+        "highPrice": "15000",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you offer rent-to-own?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer flexible rent-to-own programs with no credit check required on all of our sheds and portable buildings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What warranty comes with the buildings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our buildings feature LP SmartSide siding which comes with an industry-leading 50-year warranty against rot and decay."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+  <body class="bg-wood-50 text-slate-800 antialiased selection:bg-gold-500 selection:text-white">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
