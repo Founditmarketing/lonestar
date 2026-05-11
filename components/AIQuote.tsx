@@ -23,7 +23,7 @@ const AIQuote: React.FC = () => {
 
   const handleConfigureClick = () => {
     if (result) {
-      navigate('/configure', { state: { result } });
+      navigate('/design-studio');
       window.scrollTo(0, 0);
     }
   };
@@ -222,19 +222,19 @@ const AIQuote: React.FC = () => {
                               <span className="text-xs font-bold uppercase tracking-[0.2em]">Manual Selection</span>
                           </div>
                           <div className="grid grid-cols-2 gap-4">
-                               <button onClick={() => { navigate('/configure?style=lofted_barn'); window.scrollTo(0,0); }} className="bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-gold-500/50 p-5 rounded-2xl text-center transition-all duration-300 group/card shadow-inner">
+                               <button onClick={() => { navigate('/design-studio'); window.scrollTo(0,0); }} className="bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-gold-500/50 p-5 rounded-2xl text-center transition-all duration-300 group/card shadow-inner">
                                   <Warehouse size={28} className="mx-auto text-slate-400 group-hover/card:text-gold-400 mb-3 group-hover/card:scale-110 transition-transform" strokeWidth={1.5} />
                                   <span className="text-xs font-bold text-white tracking-wider uppercase block">Barns</span>
                                </button>
-                               <button onClick={() => { navigate('/configure?style=utility_standard'); window.scrollTo(0,0); }} className="bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-gold-500/50 p-5 rounded-2xl text-center transition-all duration-300 group/card shadow-inner">
+                               <button onClick={() => { navigate('/design-studio'); window.scrollTo(0,0); }} className="bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-gold-500/50 p-5 rounded-2xl text-center transition-all duration-300 group/card shadow-inner">
                                   <Hammer size={28} className="mx-auto text-slate-400 group-hover/card:text-gold-400 mb-3 group-hover/card:scale-110 transition-transform" strokeWidth={1.5} />
                                   <span className="text-xs font-bold text-white tracking-wider uppercase block">Utility</span>
                                </button>
-                               <button onClick={() => { navigate('/configure?style=cabin_lofted'); window.scrollTo(0,0); }} className="bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-gold-500/50 p-5 rounded-2xl text-center transition-all duration-300 group/card shadow-inner">
+                               <button onClick={() => { navigate('/design-studio'); window.scrollTo(0,0); }} className="bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-gold-500/50 p-5 rounded-2xl text-center transition-all duration-300 group/card shadow-inner">
                                   <Home size={28} className="mx-auto text-slate-400 group-hover/card:text-gold-400 mb-3 group-hover/card:scale-110 transition-transform" strokeWidth={1.5} />
                                   <span className="text-xs font-bold text-white tracking-wider uppercase block">Cabins</span>
                                </button>
-                               <button onClick={() => { navigate('/configure?style=garage_utility'); window.scrollTo(0,0); }} className="bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-gold-500/50 p-5 rounded-2xl text-center transition-all duration-300 group/card shadow-inner">
+                               <button onClick={() => { navigate('/design-studio'); window.scrollTo(0,0); }} className="bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-gold-500/50 p-5 rounded-2xl text-center transition-all duration-300 group/card shadow-inner">
                                   <Car size={28} className="mx-auto text-slate-400 group-hover/card:text-gold-400 mb-3 group-hover/card:scale-110 transition-transform" strokeWidth={1.5} />
                                   <span className="text-xs font-bold text-white tracking-wider uppercase block">Garages</span>
                                </button>

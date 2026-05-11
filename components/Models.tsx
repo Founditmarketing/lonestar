@@ -350,13 +350,6 @@ const Models: React.FC = () => {
                   )}
 
                   <div className="flex flex-col gap-4 mt-auto">
-                    <button 
-                      onClick={() => handleCustomize(activeModel)}
-                      className="w-full bg-slate-900 hover:bg-wood-800 text-white py-5 rounded-2xl font-bold transition-all flex items-center justify-center gap-3 shadow-xl hover:-translate-y-1 text-lg group"
-                    >
-                      Customize This Build
-                      <ArrowRight size={22} className="group-hover:translate-x-1.5 transition-transform text-gold-500" />
-                    </button>
                     {activeModel.startPrice > 0 && (
                       <p className="text-center text-sm text-slate-400 font-medium">
                         Base packages starting at <span className="text-slate-700 font-bold">${activeModel.startPrice.toLocaleString()}</span>

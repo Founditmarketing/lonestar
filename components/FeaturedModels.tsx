@@ -32,7 +32,7 @@ const FeaturedModels: React.FC = () => {
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
             {featured.map((model) => (
-                <div key={model.id} onClick={() => navigate(`/configure?style=${model.configKey}`)} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer border border-wood-100 flex flex-col">
+                <div key={model.id} onClick={() => navigate('/design-studio')} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer border border-wood-100 flex flex-col">
                     <div className="h-56 relative overflow-hidden">
                         <img 
                             src={model.imageUrl} 

@@ -156,7 +156,7 @@ const Navbar: React.FC = () => {
               (254) 555-SHED
             </a>
             <button 
-              onClick={() => navigate('/configure')} 
+              onClick={() => navigate('/design-studio')} 
               className={`px-7 py-3 rounded-full text-sm font-bold transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 flex items-center gap-2 group ${
                   !isTransparent 
                   ? 'bg-slate-900 text-white hover:bg-wood-800' 
@@ -265,7 +265,7 @@ const Navbar: React.FC = () => {
                  initial={{ opacity: 0, y: 20 }}
                  animate={{ opacity: 1, y: 0 }}
                  transition={{ delay: 0.5 }}
-                 onClick={() => { navigate('/configure'); setIsMobileMenuOpen(false); }} 
+                 onClick={() => { navigate('/design-studio'); setIsMobileMenuOpen(false); }} 
                  className="bg-slate-900 text-white w-full py-5 rounded-2xl font-bold text-xl shadow-xl shadow-slate-900/20 mt-4 flex items-center justify-center gap-2 active:scale-95 transition-all hover:bg-wood-800"
                >
                  Start Your Build <ArrowRight />

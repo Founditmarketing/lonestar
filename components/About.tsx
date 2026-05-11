@@ -130,7 +130,7 @@ const About: React.FC = () => {
               Find a Dealer
             </button>
             <button 
-              onClick={() => navigate('/configure')}
+              onClick={() => navigate('/design-studio')}
               className="px-8 py-3 bg-gold-500 hover:bg-gold-400 text-slate-900 font-bold rounded-xl transition-all shadow-lg hover:shadow-xl"
             >
               Start Designing
