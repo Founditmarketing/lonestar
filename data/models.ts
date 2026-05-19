@@ -1,6 +1,6 @@
 import { ShedModel } from '../types';
 
-export const MODELS: ShedModel[] = [
+export const MODELS: ShedModel[
   {
     id: '1',
     name: 'Painted Lofted Barn',
@@ -178,6 +178,7 @@ export const MODELS: ShedModel[] = [
       { size: '18x60', price: '$33,399.00', rto36: '$1,546.25', rto60: '$1,237.00' }
     ]
   },
+
   {
     id: '9',
     name: 'Hardie Side Lofted Barn',
@@ -228,56 +229,7 @@ export const MODELS: ShedModel[] = [
       { size: '18x60', price: '$33,499.00', rto36: '$1,550.88', rto60: '$1,240.70' }
     ]
   },
-  {
-    id: '10',
-    name: 'Lofted Barn',
-    description: 'A spacious and sturdy barn with dual lofts and classic wooden styling. Features a silver metal roof and star-embossed doors.',
-    features: ['Classic Wooden Siding', 'Silver Metal Roof', 'Dual Overhead Lofts'],
-    startPrice: 3979,
-    imageUrl: '/lofted-barn.png',
-    configKey: 'lofted_barn_classic',
-    category: 'Barns',
-    specs: [
-      { label: 'Wall Height', value: '4ft Standard' },
-      { label: 'Flooring', value: '5/8" Tongue & Groove' },
-      { label: 'Roofing', value: 'Silver Metal' },
-      { label: 'Loft Space', value: 'Front and Back Lofts' },
-      { label: 'Warranty', value: '50-Year Siding' },
-      { label: 'Door Opening', value: 'Double Barn Door' }
-    ],
-    pricingTable: [
-      { size: '8x12', price: '$3,979.00', rto36: '$184.21', rto60: '-' },
-      { size: '10x12', price: '$4,679.00', rto36: '$216.62', rto60: '-' },
-      { size: '10x14', price: '$5,179.00', rto36: '$239.77', rto60: '-' },
-      { size: '10x16', price: '$5,279.00', rto36: '$244.40', rto60: '-' },
-      { size: '10x20', price: '$6,599.00', rto36: '$305.51', rto60: '-' },
-      { size: '12x16', price: '$6,679.00', rto36: '$309.21', rto60: '-' },
-      { size: '12x20', price: '$7,799.00', rto36: '$361.06', rto60: '-' },
-      { size: '12x24', price: '$9,199.00', rto36: '$425.88', rto60: '$340.70' },
-      { size: '12x28', price: '$10,299.00', rto36: '$476.81', rto60: '$381.44' },
-      { size: '12x32', price: '$11,599.00', rto36: '$536.99', rto60: '$429.59' },
-      { size: '12x36', price: '$12,899.00', rto36: '$597.18', rto60: '$477.74' },
-      { size: '14x24', price: '$11,399.00', rto36: '$527.73', rto60: '$422.19' },
-      { size: '14x28', price: '$12,499.00', rto36: '$578.66', rto60: '$462.93' },
-      { size: '14x32', price: '$13,699.00', rto36: '$634.21', rto60: '$507.37' },
-      { size: '14x36', price: '$15,099.00', rto36: '$699.03', rto60: '$559.22' },
-      { size: '14x40', price: '$16,599.00', rto36: '$768.47', rto60: '$614.78' },
-      { size: '16x32', price: '$16,099.00', rto36: '$745.32', rto60: '$596.26' },
-      { size: '16x36', price: '$17,799.00', rto36: '$824.03', rto60: '$659.22' },
-      { size: '16x40', price: '$19,999.00', rto36: '$925.88', rto60: '$740.70' },
-      { size: '16x44', price: '$21,899.00', rto36: '$1,013.84', rto60: '$811.07' },
-      { size: '16x48', price: '$23,999.00', rto36: '$1,111.06', rto60: '$888.85' },
-      { size: '16x52', price: '$25,799.00', rto36: '$1,194.40', rto60: '$955.52' },
-      { size: '16x56', price: '$27,999.00', rto36: '$1,296.25', rto60: '$1,037.00' },
-      { size: '18x36', price: '$20,299.00', rto36: '$939.77', rto60: '$751.81' },
-      { size: '18x40', price: '$22,599.00', rto36: '$1,046.25', rto60: '$837.00' },
-      { size: '18x44', price: '$24,699.00', rto36: '$1,143.47', rto60: '$914.78' },
-      { size: '18x48', price: '$27,099.00', rto36: '$1,254.58', rto60: '$1,003.67' },
-      { size: '18x52', price: '$29,099.00', rto36: '$1,347.18', rto60: '$1,077.74' },
-      { size: '18x56', price: '$31,499.00', rto36: '$1,458.29', rto60: '$1,166.63' },
-      { size: '18x60', price: '$33,499.00', rto36: '$1,550.88', rto60: '$1,240.70' }
-    ]
-  },
+
   {
     id: '11',
     name: 'Painted Dutchlap Lofted Barn',
@@ -328,6 +280,7 @@ export const MODELS: ShedModel[] = [
       { size: '18x60', price: '$33,399.00', rto36: '$1,546.25', rto60: '$1,237.00' }
     ]
   },
+
   {
     id: '12',
     name: 'Side Lofted Painted Barn',
@@ -367,45 +320,7 @@ export const MODELS: ShedModel[] = [
       { size: '16x40', price: '$20,199.00', rto36: '$935.14', rto60: '$748.11' }
     ]
   },
-  {
-    id: '13',
-    name: 'Wood Side Lofted Barn',
-    description: 'A striking side-lofted barn featuring natural wood-stained siding, bold red crossbuck doors, matching window shutters, and a durable red metal roof.',
-    features: ['Wood Stained Siding', 'Red Metal Roof', 'Red Window Shutters'],
-    startPrice: 4079,
-    imageUrl: '/wood-side-lofted-barn.jpeg',
-    configKey: 'side_lofted_barn_wood',
-    category: 'Barns',
-    specs: [
-      { label: 'Wall Height', value: '4ft Standard' },
-      { label: 'Flooring', value: '5/8" Tongue & Groove' },
-      { label: 'Siding', value: 'Treated Wood Profile' },
-      { label: 'Windows', value: 'Two Side Windows' },
-      { label: 'Roofing', value: 'Red Metal' },
-      { label: 'Door Opening', value: 'Double Barn Door' }
-    ],
-    pricingTable: [
-      { size: '8x12', price: '$4,079', rto36: '$188.84', rto60: '-' },
-      { size: '10x12', price: '$4,879', rto36: '$225.88', rto60: '-' },
-      { size: '10x14', price: '$5,379', rto36: '$249.03', rto60: '-' },
-      { size: '10x16', price: '$5,479', rto36: '$253.66', rto60: '-' },
-      { size: '10x20', price: '$6,699', rto36: '$310.14', rto60: '-' },
-      { size: '12x16', price: '$6,779', rto36: '$313.84', rto60: '-' },
-      { size: '12x20', price: '$7,699', rto36: '$356.44', rto60: '-' },
-      { size: '12x24', price: '$8,899', rto36: '$411.99', rto60: '$329.59' },
-      { size: '12x28', price: '$9,999', rto36: '$462.92', rto60: '$370.33' },
-      { size: '12x32', price: '$10,799', rto36: '$499.95', rto60: '$399.96' },
-      { size: '12x36', price: '$11,899', rto36: '$550.88', rto60: '$440.70' },
-      { size: '14x24', price: '$11,499', rto36: '$532.36', rto60: '$425.89' },
-      { size: '14x28', price: '$12,699', rto36: '$587.92', rto60: '$470.33' },
-      { size: '14x32', price: '$13,699', rto36: '$634.21', rto60: '$507.37' },
-      { size: '14x36', price: '$15,699', rto36: '$726.81', rto60: '$581.44' },
-      { size: '14x40', price: '$16,299', rto36: '$754.58', rto60: '$603.67' },
-      { size: '16x32', price: '$16,299', rto36: '$754.58', rto60: '$603.67' },
-      { size: '16x36', price: '$18,199', rto36: '$842.55', rto60: '$674.04' },
-      { size: '16x40', price: '$20,199', rto36: '$935.14', rto60: '$748.11' }
-    ]
-  },
+
   {
     id: '14',
     name: 'Hardie Utility Garage',
@@ -450,39 +365,7 @@ export const MODELS: ShedModel[] = [
       { size: '18x60', price: '$35,099.00', rto36: '$1,624.95', rto60: '$1,299.96' }
     ]
   },
-  {
-    id: '15',
-    name: 'Utility Garage',
-    description: 'A sturdy and practical garage with a standard gable roof. Beautifully stained wood exterior with forest green trim, side entry door, and a matching window.',
-    features: ['Standard Gable Roof', 'Wood Stained Finish', 'Solid Roll-Up Garage Door'],
-    startPrice: 8000,
-    imageUrl: '/utility-garage.png',
-    configKey: 'garage_utility',
-    category: 'Garages',
-    specs: [
-      { label: 'Floor Joists', value: '12" On-Center Treated' },
-      { label: 'Garage Door', value: 'Roll-Up Steel' },
-      { label: 'Walk-in Door', value: 'Solid Steel Entry' },
-      { label: 'Windows', value: 'One Side Window (Shutters)' },
-      { label: 'Weight Rating', value: 'Vehicular Traffic' },
-      { label: 'Threshold', value: 'Diamond Plate' }
-    ],
-    pricingTable: [
-      { size: '12x20', price: '$8,000', rto36: '$370.37', rto60: '$296.30' },
-      { size: '12x24', price: '$8,699', rto36: '$402.73', rto60: '$322.19' },
-      { size: '12x28', price: '$9,599', rto36: '$444.40', rto60: '$355.52' },
-      { size: '12x32', price: '$10,399', rto36: '$481.44', rto60: '$385.15' },
-      { size: '12x36', price: '$11,399', rto36: '$527.73', rto60: '$422.19' },
-      { size: '14x24', price: '$10,799', rto36: '$499.95', rto60: '$399.96' },
-      { size: '14x28', price: '$11,699', rto36: '$541.62', rto60: '$433.30' },
-      { size: '14x32', price: '$12,899', rto36: '$597.18', rto60: '$657.36' },
-      { size: '14x36', price: '$14,199', rto36: '$657.36', rto60: '$525.89' },
-      { size: '14x40', price: '$15,799', rto36: '$731.44', rto60: '$585.15' },
-      { size: '16x32', price: '$15,799', rto36: '$731.44', rto60: '$585.15' },
-      { size: '16x36', price: '$17,399', rto36: '$805.51', rto60: '$644.41' },
-      { size: '16x40', price: '$19,099', rto36: '$884.21', rto60: '$707.37' }
-    ]
-  },
+
   {
     id: '16',
     name: 'Painted Dutchlap Lofted Garage',
@@ -527,6 +410,7 @@ export const MODELS: ShedModel[] = [
       { size: '18x60', price: '$35,099.00', rto36: '$1,624.95', rto60: '$1,299.96' }
     ]
   },
+
   {
     id: '17',
     name: 'Painted Dutchlap Utility Garage',
@@ -571,6 +455,7 @@ export const MODELS: ShedModel[] = [
       { size: '18x60', price: '$34,999.00', rto36: '$1,620.32', rto60: '$1,296.26' }
     ]
   },
+
   {
     id: '18',
     name: 'Painted Utility Garage',
@@ -615,6 +500,7 @@ export const MODELS: ShedModel[] = [
       { size: '18x60', price: '$32,399.00', rto36: '$1,499.95', rto60: '$1,199.96' }
     ]
   },
+
   {
     id: '19',
     name: 'Painted Lofted Garage',
@@ -659,6 +545,7 @@ export const MODELS: ShedModel[] = [
       { size: '18x60', price: '$32,499.00', rto36: '$1,504.58', rto60: '$1,203.67' }
     ]
   },
+
   {
     id: '20',
     name: 'Hardie B&B Utility Cabin',
@@ -695,6 +582,7 @@ export const MODELS: ShedModel[] = [
       { size: '16x40', price: '$21,899', rto36: '$1,013.84', rto60: '$811.07' }
     ]
   },
+
   {
     id: '21',
     name: 'Hardie Lofted Cabin',
@@ -745,45 +633,7 @@ export const MODELS: ShedModel[] = [
       { size: '18x60', price: '$35,799.00', rto36: '$1,657.36', rto60: '$1,325.89' }
     ]
   },
-  {
-    id: '22',
-    name: 'Side Utility',
-    description: 'A robust and versatile side utility building crafted with classic wooden siding. Features charming window shutters, secure double doors, and a durable gable roof.',
-    features: ['Classic Wood Siding', 'Double Crossbuck Doors', 'Side Entry Design'],
-    startPrice: 3579,
-    imageUrl: '/side-utility.png',
-    configKey: 'utility_side',
-    category: 'Utility Buildings',
-    specs: [
-      { label: 'Siding', value: 'Treated Wood' },
-      { label: 'Doors', value: 'Double Wooden Barn Doors' },
-      { label: 'Windows', value: '2x with Shutters' },
-      { label: 'Roof Style', value: 'Gable Metal Roof' },
-      { label: 'Usage', value: 'Storage / Workshop' }
-    ],
-    pricingTable: [
-      { size: '8x12', price: '$3,579', rto36: '$165.69', rto60: '-' },
-      { size: '10x10', price: '$4,079', rto36: '$129.40', rto60: '-' },
-      { size: '10x12', price: '$4,279', rto36: '$198.10', rto60: '-' },
-      { size: '10x14', price: '$4,779', rto36: '$221.25', rto60: '-' },
-      { size: '10x16', price: '$4,879', rto36: '$225.88', rto60: '-' },
-      { size: '10x20', price: '$5,999', rto36: '$277.73', rto60: '-' },
-      { size: '12x16', price: '$6,099', rto36: '$282.36', rto60: '-' },
-      { size: '12x20', price: '$6,899', rto36: '$319.40', rto60: '-' },
-      { size: '12x24', price: '$8,000', rto36: '$370.37', rto60: '$296.30' },
-      { size: '12x28', price: '$8,999', rto36: '$416.62', rto60: '$333.30' },
-      { size: '12x32', price: '$9,799', rto36: '$453.66', rto60: '$362.93' },
-      { size: '12x36', price: '$10,799', rto36: '$499.95', rto60: '$399.96' },
-      { size: '14x24', price: '$10,399', rto36: '$481.44', rto60: '$385.15' },
-      { size: '14x28', price: '$11,499', rto36: '$532.36', rto60: '$425.89' },
-      { size: '14x32', price: '$12,499', rto36: '$578.66', rto60: '$462.93' },
-      { size: '14x36', price: '$14,199', rto36: '$657.36', rto60: '$525.89' },
-      { size: '14x40', price: '$14,899', rto36: '$689.77', rto60: '$551.81' },
-      { size: '16x32', price: '$14,899', rto36: '$689.77', rto60: '$551.81' },
-      { size: '16x36', price: '$16,599', rto36: '$768.47', rto60: '$614.78' },
-      { size: '16x40', price: '$18,499', rto36: '$856.44', rto60: '$685.15' }
-    ]
-  },
+
   {
     id: '23',
     name: 'Painted Dutchlap Utility',
@@ -833,6 +683,7 @@ export const MODELS: ShedModel[] = [
       { size: '18x60', price: '$33,299.00', rto36: '$1,541.62', rto60: '$1,233.30' }
     ]
   },
+
   {
     id: '24',
     name: 'Painted Side Utility',
@@ -882,83 +733,7 @@ export const MODELS: ShedModel[] = [
       { size: '18x60', price: '$30,899.00', rto36: '$1,430.51', rto60: '$1,211.07' }
     ]
   },
-  {
-    id: '25',
-    name: 'Wood Side Utility',
-    description: 'A beautifully stained wood side utility building offering classic rustic charm. Features durable vertical wood siding, a green metal roof, double crossbuck doors, and two front-facing windows.',
-    features: ['Stained Wood Siding', 'Double Crossbuck Doors', '2x Windows Included'],
-    startPrice: 3979,
-    imageUrl: '/wood-side-utility.jpeg',
-    configKey: 'utility_side_wood',
-    category: 'Utility Buildings',
-    specs: [
-      { label: 'Siding', value: 'Treated Wood Vertical Siding' },
-      { label: 'Doors', value: 'Double Wooden Barn Doors' },
-      { label: 'Windows', value: '2x Front Facing Windows' },
-      { label: 'Roof Style', value: 'Color Metal Gable' },
-      { label: 'Usage', value: 'Storage / Workshop' }
-    ],
-    pricingTable: [
-      { size: '8x12', price: '$3,979', rto36: '$184.21', rto60: '-' },
-      { size: '10x12', price: '$4,779', rto36: '$221.25', rto60: '-' },
-      { size: '10x14', price: '$5,279', rto36: '$244.40', rto60: '-' },
-      { size: '10x16', price: '$5,379', rto36: '$249.03', rto60: '-' },
-      { size: '10x20', price: '$6,599', rto36: '$305.51', rto60: '-' },
-      { size: '12x16', price: '$6,679', rto36: '$309.21', rto60: '-' },
-      { size: '12x20', price: '$7,599', rto36: '$351.81', rto60: '-' },
-      { size: '12x24', price: '$8,799', rto36: '$407.36', rto60: '$299.96' },
-      { size: '12x28', price: '$9,899', rto36: '$458.29', rto60: '$366.63' },
-      { size: '12x32', price: '$10,699', rto36: '$495.32', rto60: '$396.26' },
-      { size: '12x36', price: '$11,799', rto36: '$546.25', rto60: '$437.00' },
-      { size: '14x24', price: '$11,399', rto36: '$527.73', rto60: '$422.19' },
-      { size: '14x28', price: '$12,599', rto36: '$583.29', rto60: '$466.63' },
-      { size: '14x32', price: '$13,599', rto36: '$629.58', rto60: '$503.67' },
-      { size: '14x36', price: '$15,599', rto36: '$722.18', rto60: '$577.74' },
-      { size: '14x40', price: '$16,199', rto36: '$749.95', rto60: '$599.96' },
-      { size: '16x32', price: '$16,199', rto36: '$749.95', rto60: '$599.96' },
-      { size: '16x36', price: '$18,099', rto36: '$837.92', rto60: '$670.33' },
-      { size: '16x40', price: '$20,099', rto36: '$930.51', rto60: '$744.41' }
-    ]
-  },
-  {
-    id: '26',
-    name: 'Wood Utility',
-    description: 'A brilliant multi-purpose treated wood building featuring a traditional gable roof profile, a central double door entrance, and dual side windows for excellent natural lighting.',
-    features: ['Stained Wood Siding', 'Double Crossbuck Doors', '2x Accent Windows'],
-    startPrice: 3799,
-    imageUrl: '/wood-utility.jpeg',
-    configKey: 'utility_wood',
-    category: 'Utility Buildings',
-    specs: [
-      { label: 'Siding', value: 'Treated Wood Paneling' },
-      { label: 'Doors', value: 'Double Wooden Barn Doors' },
-      { label: 'Windows', value: '2x Flanking Windows' },
-      { label: 'Roof Style', value: 'Gable Metal Roof' },
-      { label: 'Usage', value: 'General Storage / Workshop' }
-    ],
-    pricingTable: [
-      { size: '8x12', price: '$3,799.00', rto36: '$175.88', rto60: '-' },
-      { size: '10x10', price: '$4,399.00', rto36: '$203.66', rto60: '-' },
-      { size: '10x12', price: '$4,599.00', rto36: '$212.92', rto60: '-' },
-      { size: '10x14', price: '$5,099.00', rto36: '$236.06', rto60: '-' },
-      { size: '10x16', price: '$5,199.00', rto36: '$240.69', rto60: '-' },
-      { size: '10x20', price: '$6,399.00', rto36: '$296.25', rto60: '-' },
-      { size: '12x16', price: '$6,499.00', rto36: '$300.88', rto60: '-' },
-      { size: '12x20', price: '$7,399.00', rto36: '$342.55', rto60: '-' },
-      { size: '12x24', price: '$8,599.00', rto36: '$398.10', rto60: '$318.48' },
-      { size: '12x28', price: '$9,699.00', rto36: '$449.03', rto60: '$329.59' },
-      { size: '12x32', price: '$10,499.00', rto36: '$486.06', rto60: '$388.85' },
-      { size: '12x36', price: '$11,599.00', rto36: '$536.99', rto60: '$429.59' },
-      { size: '14x24', price: '$11,199.00', rto36: '$518.47', rto60: '$414.78' },
-      { size: '14x28', price: '$12,399.00', rto36: '$574.03', rto60: '$459.22' },
-      { size: '14x32', price: '$13,399.00', rto36: '$622.32', rto60: '$496.26' },
-      { size: '14x36', price: '$15,399.00', rto36: '$714.92', rto60: '$570.33' },
-      { size: '14x40', price: '$15,999.00', rto36: '$742.69', rto60: '$592.56' },
-      { size: '16x32', price: '$15,999.00', rto36: '$742.69', rto60: '$592.56' },
-      { size: '16x36', price: '$17,899.00', rto36: '$830.66', rto60: '$662.93' },
-      { size: '16x40', price: '$19,899.00', rto36: '$923.25', rto60: '$737.00' }
-    ]
-  },
+
   {
     id: '27',
     name: 'Hardie Side Utility',
@@ -1008,6 +783,7 @@ export const MODELS: ShedModel[] = [
       { size: '18x60', price: '$33,499.00', rto36: '$1,550.88', rto60: '$1,240.70' }
     ]
   },
+
   {
     id: '28',
     name: 'Cottage 1668',
@@ -1026,6 +802,7 @@ export const MODELS: ShedModel[] = [
     ],
     pricingTable: []
   },
+
   {
     id: '29',
     name: 'Cottage 1678',
@@ -1044,6 +821,7 @@ export const MODELS: ShedModel[] = [
     ],
     pricingTable: []
   },
+
   {
     id: '30',
     name: 'Hardie Side Lofted Deluxe',
@@ -1093,6 +871,7 @@ export const MODELS: ShedModel[] = [
       { size: '18x60', price: '$35,399.00', rto36: '$1,638.84', rto60: '$1,311.07' }
     ]
   },
+
   {
     id: '31',
     name: 'Hardie Side Utility Deluxe',
@@ -1142,6 +921,7 @@ export const MODELS: ShedModel[] = [
       { size: '18x60', price: '$35,399.00', rto36: '$1,638.84', rto60: '$1,311.07' }
     ]
   },
+
   {
     id: '32',
     name: 'Painted Dultchlap Side Utility Deluxe',
@@ -1191,69 +971,7 @@ export const MODELS: ShedModel[] = [
       { size: '18x60', price: '$35,299.00', rto36: '$1,634.21', rto60: '$1,307.37' }
     ]
   },
-  {
-    id: '33',
-    name: 'Wood Lofted Garage',
-    description: 'A handsome wood lofted garage providing ultimate storage space. Features natural wood-stained siding, a durable gambrel roof, and a heavy-duty roll-up door.',
-    features: ['Stained Wood Siding', 'Gambrel Lofted Roof', 'Roll-Up Garage Door'],
-    startPrice: 8899,
-    imageUrl: '/wood lofted garage image.jpg',
-    configKey: 'garage_lofted_wood',
-    category: 'Garages',
-    specs: [
-      { label: 'Floor Joists', value: '12" On-Center Treated' },
-      { label: 'Garage Door', value: 'Roll-Up Steel' },
-      { label: 'Walk-in Door', value: 'Solid Steel Entry' },
-      { label: 'Siding', value: 'Treated Wood Profile' },
-      { label: 'Loft', value: 'Massive Overhead Storage' },
-      { label: 'Threshold', value: 'Diamond Plate' }
-    ],
-    pricingTable: [
-      { size: '12x20', price: '$8,899', rto36: '$411.99', rto60: '$329.59' },
-      { size: '12x24', price: '$10,099', rto36: '$467.55', rto60: '$374.04' },
-      { size: '12x28', price: '$10,799', rto36: '$499.95', rto60: '$399.96' },
-      { size: '12x32', price: '$11,899', rto36: '$550.88', rto60: '$440.70' },
-      { size: '12x36', price: '$13,299', rto36: '$615.69', rto60: '$492.56' },
-      { size: '14x24', price: '$12,499', rto36: '$578.66', rto60: '$462.93' },
-      { size: '14x28', price: '$13,899', rto36: '$643.47', rto60: '$514.78' },
-      { size: '14x32', price: '$15,199', rto36: '$703.66', rto60: '$562.93' },
-      { size: '14x36', price: '$16,599', rto36: '$770.47', rto60: '$614.78' },
-      { size: '14x40', price: '$18,299', rto36: '$849.18', rto60: '$677.74' },
-      { size: '16x32', price: '$17,299', rto36: '$802.88', rto60: '$640.70' },
-      { size: '16x36', price: '$19,399', rto36: '$900.10', rto60: '$718.48' },
-      { size: '16x40', price: '$21,299', rto36: '$988.06', rto60: '$788.85' }
-    ]
-  },
-  {
-    id: '34',
-    name: 'Wood & Painted Low Wall Barn',
-    description: 'Our most economical solution. The classic barn shape in a compact form, available in both wood and painted finishes. Features a single crossbuck door and a low-profile gambrel roof.',
-    features: ['Budget Friendly', 'Classic Barn Look', 'Single Barn Door'],
-    startPrice: 2399,
-    imageUrl: '/wood painted low barn image.jpg',
-    configKey: 'low_wall_barn',
-    category: 'Barns',
-    specs: [
-      { label: 'Wall Height', value: '4ft Side Walls' },
-      { label: 'Peak Height', value: 'Approx 9ft' },
-      { label: 'Siding', value: 'Wood or Painted' },
-      { label: 'Flooring', value: '5/8" Tongue & Groove' },
-      { label: 'Warranty', value: '50-Year Siding' },
-      { label: 'Value', value: 'Lowest Price / SqFt' }
-    ],
-    pricingTable: [
-      { size: '8x8', price: '$2,399.00', rto36: '$111.06', rto60: '-' },
-      { size: '8x10', price: '$2,499.00', rto36: '$115.69', rto60: '-' },
-      { size: '8x12', price: '$2,699.00', rto36: '$124.95', rto60: '-' },
-      { size: '10x10', price: '$3,199.00', rto36: '$148.10', rto60: '-' },
-      { size: '10x12', price: '$3,299.00', rto36: '$152.73', rto60: '-' },
-      { size: '10x14', price: '$3,699.00', rto36: '$171.25', rto60: '-' },
-      { size: '10x16', price: '$3,899.00', rto36: '$180.51', rto60: '-' },
-      { size: '10x20', price: '$4,699.00', rto36: '$217.55', rto60: '-' },
-      { size: '12x16', price: '$4,799.00', rto36: '$222.18', rto60: '-' },
-      { size: '12x20', price: '$5,399.00', rto36: '$249.95', rto60: '-' }
-    ]
-  },
+
   {
     id: '35',
     name: 'Painted Dutchlap Side Lofted Barn',
@@ -1304,6 +1022,7 @@ export const MODELS: ShedModel[] = [
       { size: '18x60', price: '$33,499.00', rto36: '$1,550.88', rto60: '$1,240.70' }
     ]
   },
+
   {
     id: '36',
     name: 'Hardie Utility Cabin',
@@ -1354,42 +1073,7 @@ export const MODELS: ShedModel[] = [
       { size: '18x60', price: '$35,699.00', rto36: '$1,652.73', rto60: '$1,322.19' }
     ]
   },
-  {
-    id: '37',
-    name: 'Wood Utility Cabin',
-    description: 'A rustic utility cabin featuring natural wood siding. Built with a welcoming front porch and windows to provide a comfortable, bright interior.',
-    features: ['Natural Wood Siding', 'Welcoming Front Porch', 'Screened Windows'],
-    startPrice: 5399,
-    imageUrl: '/Wood Utility Cabin image.jpg',
-    configKey: 'cabin_utility_wood',
-    category: 'Cabins',
-    specs: [
-      { label: 'Porch Depth', value: '4ft or 6ft Covered' },
-      { label: 'Walk-in Door', value: '9-Lite Residential' },
-      { label: 'Siding', value: 'Natural Wood' },
-      { label: 'Windows', value: 'Screened Windows' },
-      { label: 'Roof Style', value: 'Standard Gable' },
-      { label: 'Usage', value: 'Office / Studio / Guest' }
-    ],
-    pricingTable: [
-      { size: '8x16', price: '$5,399.00', rto36: '$249.95', rto60: '-' },
-      { size: '10x16', price: '$5,999.00', rto36: '$277.73', rto60: '-' },
-      { size: '10x20', price: '$6,999.00', rto36: '$324.03', rto60: '-' },
-      { size: '12x20', price: '$8,000.00', rto36: '$370.37', rto60: '$296.30' },
-      { size: '12x24', price: '$8,899.00', rto36: '$411.99', rto60: '$329.59' },
-      { size: '12x28', price: '$10,099.00', rto36: '$467.55', rto60: '$374.04' },
-      { size: '12x32', price: '$10,799.00', rto36: '$499.95', rto60: '$399.96' },
-      { size: '12x36', price: '$11,799.00', rto36: '$546.25', rto60: '$437.00' },
-      { size: '14x24', price: '$11,099.00', rto36: '$513.84', rto60: '$411.07' },
-      { size: '14x28', price: '$12,399.00', rto36: '$574.03', rto60: '$459.22' },
-      { size: '14x32', price: '$13,899.00', rto36: '$643.47', rto60: '$514.78' },
-      { size: '14x36', price: '$15,399.00', rto36: '$712.92', rto60: '$570.33' },
-      { size: '14x40', price: '$16,499.00', rto36: '$763.84', rto60: '$611.07' },
-      { size: '16x32', price: '$16,499.00', rto36: '$763.84', rto60: '$611.07' },
-      { size: '16x36', price: '$18,399.00', rto36: '$851.81', rto60: '$681.44' },
-      { size: '16x40', price: '$20,199.00', rto36: '$935.14', rto60: '$748.11' }
-    ]
-  },
+
   {
     id: '38',
     name: 'Lofted Cabin',
@@ -1440,6 +1124,7 @@ export const MODELS: ShedModel[] = [
       { size: '18x60', price: '$35,799.00', rto36: '$1,657.36', rto60: '$1,325.89' }
     ]
   },
+
   {
     id: '39',
     name: 'Utility Cabin',
@@ -1490,6 +1175,7 @@ export const MODELS: ShedModel[] = [
       { size: '18x60', price: '$35,699.00', rto36: '$1,652.73', rto60: '$1,322.19' }
     ]
   },
+
   {
     id: '40',
     name: 'Painted Utility Cabin',
@@ -1540,6 +1226,7 @@ export const MODELS: ShedModel[] = [
       { size: '18x60', price: '$33,099.00', rto36: '$1,532.36', rto60: '$1,225.89' }
     ]
   },
+
   {
     id: '41',
     name: 'Painted Lofted Cabin',
@@ -1590,42 +1277,7 @@ export const MODELS: ShedModel[] = [
       { size: '18x60', price: '$33,199.00', rto36: '$1,536.99', rto60: '$1,229.59' }
     ]
   },
-  {
-    id: '42',
-    name: 'Wood Lofted Cabin',
-    description: 'A beautiful lofted cabin built with natural wood siding. Features an overhead loft for extra storage or sleeping space, and a charming front porch.',
-    features: ['Natural Wood Siding', 'Lofted Roof Design', 'Covered Front Porch'],
-    startPrice: 5999,
-    imageUrl: '/Wood Lofted Cabin image.jpg',
-    configKey: 'cabin_lofted_wood',
-    category: 'Cabins',
-    specs: [
-      { label: 'Porch Depth', value: '4ft or 6ft Covered' },
-      { label: 'Walk-in Door', value: '9-Lite Residential' },
-      { label: 'Siding', value: 'Natural Wood' },
-      { label: 'Windows', value: 'Screened Windows' },
-      { label: 'Roof Style', value: 'Gambrel Roof' },
-      { label: 'Loft Space', value: 'Included Overhead' }
-    ],
-    pricingTable: [
-      { size: '8x16', price: '$5,999.00', rto36: '$277.73', rto60: '-' },
-      { size: '10x16', price: '$6,499.00', rto36: '$300.88', rto60: '-' },
-      { size: '10x20', price: '$7,799.00', rto36: '$361.06', rto60: '-' },
-      { size: '12x20', price: '$8,899.00', rto36: '$411.99', rto60: '$303.67' },
-      { size: '12x24', price: '$10,199.00', rto36: '$472.18', rto60: '$377.74' },
-      { size: '12x28', price: '$11,099.00', rto36: '$513.84', rto60: '$411.07' },
-      { size: '12x32', price: '$12,099.00', rto36: '$560.14', rto60: '$448.11' },
-      { size: '12x36', price: '$13,499.00', rto36: '$624.95', rto60: '$499.96' },
-      { size: '14x24', price: '$12,599.00', rto36: '$583.29', rto60: '$466.63' },
-      { size: '14x28', price: '$13,999.00', rto36: '$648.10', rto60: '$518.48' },
-      { size: '14x32', price: '$15,599.00', rto36: '$722.18', rto60: '$577.74' },
-      { size: '14x36', price: '$16,999.00', rto36: '$786.99', rto60: '$629.59' },
-      { size: '14x40', price: '$18,399.00', rto36: '$851.81', rto60: '$681.44' },
-      { size: '16x32', price: '$18,399.00', rto36: '$851.81', rto60: '$681.44' },
-      { size: '16x36', price: '$19,699.00', rto36: '$911.99', rto60: '$729.59' },
-      { size: '16x40', price: '$20,999.00', rto36: '$972.18', rto60: '$777.74' }
-    ]
-  },
+
   {
     id: '43',
     name: 'Painted Dutchlap Lofted Cabin',
@@ -1676,55 +1328,7 @@ export const MODELS: ShedModel[] = [
       { size: '18x60', price: '$35,799.00', rto36: '$1,657.36', rto60: '$1,325.89' }
     ]
   },
-  {
-    id: '44',
-    name: 'Utility',
-    description: 'A classic and versatile utility building featuring a clean, simple design perfect for all your basic storage needs.',
-    features: ['Classic Design', 'Double Wooden Doors', 'Solid Metal Roof'],
-    startPrice: 3399,
-    imageUrl: '/Utility image.jpg',
-    configKey: 'utility',
-    category: 'Utility Buildings',
-    specs: [
-      { label: 'Siding', value: 'Treated Wood Siding' },
-      { label: 'Doors', value: 'Double Wooden Barn Doors' },
-      { label: 'Windows', value: 'None Standard' },
-      { label: 'Roof Style', value: 'Classic Gable Roof' },
-      { label: 'Usage', value: 'General Storage / Tool Shed' }
-    ],
-    pricingTable: [
-      { size: '8x12', price: '$3,399.00', rto36: '$157.36', rto60: '-' },
-      { size: '10x12', price: '$4,099.00', rto36: '$189.77', rto60: '-' },
-      { size: '10x14', price: '$4,599.00', rto36: '$212.92', rto60: '-' },
-      { size: '10x16', price: '$4,699.00', rto36: '$217.55', rto60: '-' },
-      { size: '10x20', price: '$5,799.00', rto36: '$268.47', rto60: '-' },
-      { size: '12x16', price: '$5,899.00', rto36: '$273.10', rto60: '-' },
-      { size: '12x20', price: '$7,099.00', rto36: '$328.66', rto60: '-' },
-      { size: '12x24', price: '$8,299.00', rto36: '$384.21', rto60: '$307.37' },
-      { size: '12x28', price: '$9,399.00', rto36: '$435.14', rto60: '$348.11' },
-      { size: '12x32', price: '$10,599.00', rto36: '$490.69', rto60: '$392.56' },
-      { size: '12x36', price: '$11,799.00', rto36: '$546.25', rto60: '$437.00' },
-      { size: '14x24', price: '$10,199.00', rto36: '$472.18', rto60: '$377.74' },
-      { size: '14x28', price: '$11,299.00', rto36: '$523.10', rto60: '$418.48' },
-      { size: '14x32', price: '$12,299.00', rto36: '$569.40', rto60: '$455.52' },
-      { size: '14x36', price: '$13,699.00', rto36: '$634.21', rto60: '$507.37' },
-      { size: '14x40', price: '$14,999.00', rto36: '$694.40', rto60: '$555.52' },
-      { size: '16x32', price: '$14,699.00', rto36: '$680.51', rto60: '$544.41' },
-      { size: '16x36', price: '$16,399.00', rto36: '$759.21', rto60: '$607.37' },
-      { size: '16x40', price: '$18,299.00', rto36: '$847.18', rto60: '$677.74' },
-      { size: '16x44', price: '$20,199.00', rto36: '$935.14', rto60: '$748.11' },
-      { size: '16x48', price: '$21,999.00', rto36: '$1,018.47', rto60: '$814.78' },
-      { size: '16x52', price: '$23,799.00', rto36: '$1,101.81', rto60: '$881.44' },
-      { size: '16x56', price: '$25,699.00', rto36: '$1,189.77', rto60: '$951.81' },
-      { size: '18x36', price: '$18,599.00', rto36: '$861.06', rto60: '$688.85' },
-      { size: '18x40', price: '$20,599.00', rto36: '$953.66', rto60: '$762.93' },
-      { size: '18x44', price: '$22,699.00', rto36: '$1,050.88', rto60: '$840.70' },
-      { size: '18x48', price: '$24,699.00', rto36: '$1,143.47', rto60: '$914.78' },
-      { size: '18x52', price: '$26,699.00', rto36: '$1,236.06', rto60: '$988.85' },
-      { size: '18x56', price: '$28,699.00', rto36: '$1,328.66', rto60: '$1,062.93' },
-      { size: '18x60', price: '$30,699.00', rto36: '$1,421.25', rto60: '$1,137.00' }
-    ]
-  },
+
   {
     id: '45',
     name: 'Painted Dutchlap Side Utility',
@@ -1774,6 +1378,7 @@ export const MODELS: ShedModel[] = [
       { size: '18x60', price: '$33,499.00', rto36: '$1,550.88', rto60: '$1,240.70' }
     ]
   },
+
   {
     id: '46',
     name: 'Side Lofted Deluxe',
