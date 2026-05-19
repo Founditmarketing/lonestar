@@ -1,6 +1,6 @@
 import { ShedModel } from '../types';
 
-export const MODELS: ShedModel[
+export const MODELS: ShedModel[] = [
   {
     id: '1',
     name: 'Painted Lofted Barn',
