@@ -140,7 +140,7 @@ const Navbar: React.FC = () => {
             <div className={`h-4 w-px ${!isTransparent ? 'bg-wood-200' : 'bg-white/20'}`}></div>
 
             <a 
-              href="https://lonestarshedsllc.com/wp-content/uploads/2024/11/lonestar-sheds-brochure-nov-2024.pdf"
+              href="/lonestar-sheds-brochure-nov-2024.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className={`text-xs font-bold uppercase tracking-widest flex items-center gap-1.5 hover:opacity-75 transition-opacity ${textColorClass}`}
@@ -240,7 +240,7 @@ const Navbar: React.FC = () => {
                 className="space-y-4 pt-8"
                >
                   <a 
-                    href="https://lonestarshedsllc.com/wp-content/uploads/2024/11/lonestar-sheds-brochure-nov-2024.pdf"
+                    href="/lonestar-sheds-brochure-nov-2024.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-4 text-wood-700 font-semibold"
