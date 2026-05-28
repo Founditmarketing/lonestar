@@ -17,6 +17,14 @@
       "destination": "/llms.txt"
     },
     {
+      "source": "/lonestar-sheds-brochure-nov-2024.pdf",
+      "destination": "/lonestar-sheds-brochure-nov-2024.pdf"
+    },
+    {
+      "source": "/shed-booklet_cottages-no-bleeds-of_REDUCED-1.pdf",
+      "destination": "/shed-booklet_cottages-no-bleeds-of_REDUCED-1.pdf"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
