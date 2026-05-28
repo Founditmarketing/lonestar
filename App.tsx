@@ -17,6 +17,7 @@ import Legal from './components/Legal';
 import FAQ from './components/FAQ';
 import RentToOwn from './components/RentToOwn';
 import SitePrep from './components/SitePrep';
+import Brochure from './components/Brochure';
 
 // Helper component to scroll to top on route change
 const ScrollToTop = () => {
@@ -121,6 +122,13 @@ const TermsPage: React.FC = () => (
   </>
 );
 
+const BrochurePage: React.FC = () => (
+  <>
+    <Navbar />
+    <Brochure />
+  </>
+);
+
 function App() {
   return (
     <BrowserRouter>
@@ -138,6 +146,7 @@ function App() {
           <Route path="/prep" element={<PrepPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/terms" element={<TermsPage />} />
+          <Route path="/brochure" element={<BrochurePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

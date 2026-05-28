@@ -41,9 +41,9 @@ const Footer: React.FC = () => {
           <ul className="space-y-4 text-sm text-slate-300">
             <li><Link to="/about" className="hover:text-wood-500 transition-colors block">About Us</Link></li>
             <li>
-                <a href="https://lonestarshedsllc.com/wp-content/uploads/2024/11/lonestar-sheds-brochure-nov-2024.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-wood-500 transition-colors flex items-center gap-2">
-                    <FileText size={14} /> Download Brochure
-                </a>
+                <Link to="/brochure" className="hover:text-wood-500 transition-colors flex items-center gap-2">
+                    <FileText size={14} /> View Brochure
+                </Link>
             </li>
             <li><Link to="/prep" className="hover:text-wood-500 transition-colors block">Site Prep Guide</Link></li>
             <li><Link to="/rto" className="hover:text-wood-500 transition-colors block">Rent-to-Own Info</Link></li>
