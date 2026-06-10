@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
@@ -150,6 +151,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
+      <Analytics />
     </BrowserRouter>
   );
 }
