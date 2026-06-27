@@ -1,0 +1,11 @@
+# Lone Star Sheds — https://lonestarshedsllc.com
+# Premium Handcrafted Sheds, Barns, Cabins & Garages in Texas
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://lonestarshedsllc.com/sitemap.xml
+
+# AI/LLM Discovery
+# See https://lonestarshedsllc.com/llms.txt for structured AI-readable content
