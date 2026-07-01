@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
                </Link>
              </div>
           </div>
-          <a href="tel:9032591909" className="text-white font-bold hover:text-wood-500 transition-colors block mb-2 text-lg">(903)-259-1909</a>
+          <a href="tel:9038860307" className="text-white font-bold hover:text-wood-500 transition-colors block mb-2 text-lg">(903)-886-0307</a>
           <a href="mailto:lyndon@lonestarshedsllc.com" className="text-sm hover:text-white transition-colors text-slate-400">lyndon@lonestarshedsllc.com</a>
         </div>
       </div>
