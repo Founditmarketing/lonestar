@@ -1,12 +1,18 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Home, Compass } from 'lucide-react';
+import PageSEO from './PageSEO';
 
 const NotFound: React.FC = () => {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-wood-50 flex items-center justify-center px-6">
+      <PageSEO
+        title="Page Not Found"
+        description="The page you're looking for doesn't exist on Lone Star Sheds' website. Return home to explore our sheds, barns, and cabins."
+        noindex
+      />
       <div className="max-w-md w-full text-center">
         <div className="w-24 h-24 bg-wood-100 rounded-full flex items-center justify-center mx-auto mb-8 animate-pulse">
             <Compass size={48} className="text-wood-600" />

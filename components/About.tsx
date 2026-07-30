@@ -10,9 +10,9 @@ const About: React.FC = () => {
       {/* Hero Section */}
       <div className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://lonestarshedsllc.com/wp-content/uploads/2022/08/Screen-Shot-2022-08-04-at-1.37.58-PM.png" 
-            alt="Lone Star Sheds Workshop" 
+          <img
+            src="/images/real/scraped-19.jpeg"
+            alt="Lone Star Sheds custom building on display"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-slate-900/80"></div>
@@ -38,9 +38,9 @@ const About: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="order-2 md:order-1 relative">
               <div className="absolute -inset-4 border-2 border-wood-100 rounded-3xl -translate-x-4 -translate-y-4 -z-10"></div>
-              <img 
-                src="https://lonestarshedsllc.com/wp-content/uploads/2022/08/236199884_2358240684307833_1133409526224825962_n.jpeg" 
-                alt="Lone Star Sheds Construction" 
+              <img
+                src="/images/real/scraped-21.jpeg"
+                alt="Lone Star Sheds handcrafted cabin build"
                 className="rounded-2xl shadow-xl w-full"
               />
               <div className="absolute -bottom-6 -right-6 bg-wood-500 text-white p-6 rounded-xl shadow-lg hidden md:block">
