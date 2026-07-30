@@ -85,7 +85,7 @@ const Legal: React.FC<LegalProps> = ({ type }) => {
           )}
 
           <div className="pt-8 border-t border-slate-100 text-sm text-slate-500">
-            <p>Questions? Contact us at <a href="mailto:legal@lonestarsheds.com" className="text-wood-600 underline">legal@lonestarsheds.com</a></p>
+            <p>Questions? Contact us at <a href="mailto:legal@lonestarshedsllc.com" className="text-wood-600 underline">legal@lonestarshedsllc.com</a></p>
           </div>
         </div>
       </div>
